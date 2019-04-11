@@ -381,7 +381,6 @@ div#loginn{
 .nav li  ul{
 	position:absolute; 
 	top:53px; 
-	
 	background-color:#fff; 
 	display:none;
 } 
@@ -392,6 +391,15 @@ div#loginn{
 	display:block; 
 	width:150px;
 	height:75px;
+}
+
+.opcoes{
+	display: none;
+	top: 10%;
+}
+
+.tdHorario:hover .opcoes{
+	display: block;
 }
 
 

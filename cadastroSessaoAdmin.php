@@ -7,50 +7,9 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
-<?php 
-	if(isset($_GET["id_data"])){
-		require "php/Conexao.php";
-		$id_dia=$_GET["id_data"];
-		$verifica=0;
-		$query1 = "select agendada,TIME_FORMAT(horario, '%H:%i') as horarioF from datahora where id_data=".$id_dia;
-
-		$resultado = $conexao->query($query1);
-		echo "<script>
-			if(confirm('";
-		while($registros = $resultado->fetch_assoc()){
-			if($registros["agendada"]==1){
-				echo $registros["horarioF"].", ";
-				$verifica+=1;
-			}
-		}
-		if($verifica>0){
-		echo "são horários agendados, você deseja apagar mesmo assim? Entre em contato com os clientes para avisa-los!')){
-		window.location.href='php/apagarDia.php?id_data=$id_dia';
-		}else{
-			window.location.href='cadastroSessaoAdmin.php';
-		}";
-		}else{
-			echo "Você deseja realmente apagar esse dia?')){
-		window.location.href='php/apagarDia.php?id_data=$id_dia';
-		}else{
-			window.location.href='cadastroSessaoAdmin.php';
-		}";
-		}
-		echo "</script>";
-	}
-	?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script type="text/javascript">
-	function mostraDiv(div) {
-  div.style.display = "flex";
-}
-
-function escondeDiv(div) {
-  div.style.display = "none";
-}
-</script>>
 <title>Axilaser | Home</title> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />

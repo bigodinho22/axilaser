@@ -70,29 +70,29 @@
 							</div>
 						</span>
 						<span>
-							<i>Qual a cor de seu pelo? (Região que você deseja fazer depilação a laser)</i>
+							<i>Qual a cor de seu pelo? (Região que vc deseja fazer depilação a laser)</i>
 							<select style="width: 100%;" name="corPelo">
-								<option value=1>Loiro</option>
-								<option value=1>Ruivo</option>
-								<option value=2>Preto</option>
-								<option value=2>Castanho</option>
-								<option value=1>Branco</option>
+								<option value="nao">Loiro</option>
+								<option value="nao">Ruivo</option>
+								<option>Preto</option>
+								<option>Castanho</option>
+								<option value="nao">Branco</option>
 							</select>
 						</span>
 						<span>
 							<i>Você está fazendo uso ou já fez do remédio Roacutan?</i>
 							<select style="width: 100%;" name="roacutan">
-								<option value=1>Sim, estou fazendo</option>
-								<option value=2>Sim, já fiz</option>
-								<option value=3>Não</option>
+								<option>Sim, estou fazendo</option>
+								<option>Sim, já fiz</option>
+								<option>Não</option>
 							</select>
 						</span>
 						<span>
 							<i>Tem câncer ou vitiligo?</i>
 							<select style="width: 100%;" name="cancerVitiligo">
-								<option value=1>Sim, tenho câncer e/ou vitiligo</option>
-								<option value=2>Sim, já tive câncer e/ou vitiligo</option>
-								<option value=3>Não</option>
+								<option value="sim">Sim, tenho câncer e/ou vitiligo</option>
+								<option value="sim">Sim, já tive câncer e/ou vitiligo</option>
+								<option value="nao">Não</option>
 							</select>
 						</span>
 						<div class="w3_submit">

@@ -70,7 +70,7 @@
 							</div>
 						</span>
 						<span>
-							<i>Qual a cor de seu pelo? (Região que vc deseja fazer depilação a laser)</i>
+							<i>Qual a cor de seu pelo? (Região que você deseja fazer depilação a laser)</i>
 							<select style="width: 100%;" name="corPelo">
 								<option value=1>Loiro</option>
 								<option value=1>Ruivo</option>

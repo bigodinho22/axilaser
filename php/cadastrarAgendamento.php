@@ -17,11 +17,12 @@
 		while ($rowHorario = $resultadoHorario->fetch_assoc() ) {
 			$dia=$rowHorario['data'];
 		}
-		$queryHorario = "select TIME_FORMAT(horario, '%H:%i') as horario from datahora where id_horario_data=".$id_horario;
+		$queryHorario = "select id_horario_data,TIME_FORMAT(horario, '%H:%i') as horario from datahora where id_horario_data=".$id_horario;
 		$resultadoHorario = $conexao->query($queryHorario);
 	
 		while ($rowHorario = $resultadoHorario->fetch_assoc() ) {
 			$horario=$rowHorario['horario'];
+			$id_horario=$rowHorario['id_horario_data'];
 		}
 
 		$query = "INSERT INTO agenda VALUES (NULL,'".$idUsuario."', NULL,'".$dia."','".$horario."', '".$regiao."', NULL)";

@@ -2,12 +2,13 @@
 
     include "conexao.php";
 
-    $query = "select horario,regiao,id_cliente,DATE_FORMAT(data, '%d/%m/%Y') as data from agenda ORDER BY data ASC";
+    $query = "select id_horario_data,regiao,id_cliente from agenda ORDER BY data ASC";
     
     $resultado = $conexao->query($query);
 
     if($resultado->num_rows>0){
         while($registro = $resultado->fetch_assoc()){
+            $queryIdData_Hora = "select id_data, TIME_FORMAT(horario, '%H:%i') as horarioF from datahora where id_horario_data=".$registro["id_horario_data"];
             $querySelectNomeU = "select nome from cliente where id_cliente ='".$registro['id_cliente']."'";
             $resultadoNome = $conexao->query($querySelectNomeU);
             while($nomeReg = $resultadoNome->fetch_assoc()){

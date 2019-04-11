@@ -1,0 +1,582 @@
+.listaLogin{
+    right: auto;
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #00bcc5;
+    border-radius: 50px;
+    background-color: #00bcc5;
+}
+
+.navCor{
+	background-color: white;  
+	padding: 2%;
+	display: block;
+}
+
+.w3header{
+	position: -webkit-sticky;
+	position: sticky !important;
+	top: 0;
+}
+
+#quemSomos{
+	margin-left: 10%; 
+	margin-right: 10%;
+	font-size: 20px;
+	margin-bottom: 5%;
+	color: white;
+	text-align: center;
+}
+
+
+.clubeaxi{
+	padding: 2%;
+	width: 50%;
+}
+
+.clubeaxi h2{
+	color: black !important;
+}
+
+.clubeaxi p {
+	color: black !important;
+}
+
+.axiblack{ 
+	padding: 2%;
+	width: 50%;
+	float: right;
+}
+
+.axiblack h2{
+	color: black !important;
+}
+
+.axiblack p {
+	color: black!important;
+}
+
+.botoesTopo{
+	color:white;
+}
+
+#novocliente, #nossocliente{
+	margin-right: 20px;
+}
+
+#depilacaoFem{
+	color: #ff00bf;
+}
+
+#depilacaoMas{
+	color:#0040ff;
+}
+
+.depilacao1{
+	float: left; 
+	width: 45%; 
+	border: #ff00bf solid 1px; 
+	border-radius: 10px;
+	padding: 2%; 
+	background-color: rgb(255, 230, 249);
+	background-image: url("../images/mulher.jpg");
+	background-size: cover;
+
+}
+
+.depilacao2{
+	float: right; 
+	width: 45%; 
+	border: #0040ff solid 1px; 
+	padding: 3.5%;
+	border-radius: 10px;
+	background-color: rgb(230, 236, 255);
+	background-image: url("../images/homem.jpg");
+	background-size: cover;
+}
+
+#btnDepF{
+	background-color: rgb(255, 128, 225);
+	border: #ff00bf ;
+}
+
+#btnDepM{
+	background-color: rgb(128, 159, 255); 
+	border: #0040ff;
+}
+
+#btnArea{
+	background-color: #00bcc5;
+	border: 1px solid #00bcc5;
+	border-radius: 50px;
+}
+
+#btnAgendar{
+	background-color: #00bcc5;
+	border: 1px solid #00bcc5;
+	border-radius: 50px;
+}
+
+#botoes{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+#listaLogAd {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-header h1 { 
+    display: initial !important;
+}
+
+.navbar-header h1 a {
+    display: flex !important;
+    position: absolute !important;	
+}
+
+.w3header h1 a img{
+	position: absolute;
+	width: 18%;
+    top: 0;
+    height: 100%;
+    left: 7%;
+    min-height: 50px;
+    min-width: 150px;
+}
+
+.agileits_mail_grid_right1 span i{
+	text-transform: none !important;
+}
+
+#lugDepFem{
+	columns: 2;
+	text-align: center;
+}
+
+.lugaresFem{
+	color: #ff00bf;
+	font-size: 20px;
+}
+
+.lugaresFem:hover{
+	color: white;
+	background-color: #ff00bf;
+	border-radius: 50px;
+}
+
+#lugDepMas{
+	columns: 2;
+	text-align: center;
+}
+
+.lugaresMas{
+	color: #0040ff;
+	font-size: 20px;
+}
+
+.lugaresMas:hover{
+	color: white;
+	background-color: #0040ff;
+	border-radius: 50px;
+}
+
+#formLogin, #formAgendar, #formLoginAdm, #formCadastroSessao{
+	margin-right: 15% !important;
+	margin-left: 15% !important;
+}
+
+a.bnrw3-agiletext{
+	position: absolute;
+    bottom:10%;
+    width: 52%;
+    left: 24%;
+    text-align: center;
+    line-height: 2.3em;
+    border: 3px solid rgba(255, 255, 255, 0.09);
+    padding: 5px; 
+    background: #00bcc5;
+    font-size: 20px;
+    letter-spacing: 0 !important;
+    color: white !important;
+}
+
+.footer-copy{
+	background-color: #f5f5f5 !important;
+}
+
+#programas{
+	background-color: white  !important;
+}
+
+.col-md-6.col-sm-6.col-xs-6{
+	padding: 5% !important;
+	margin: 0 !important;
+}
+
+.linkPrincipal{
+	font-size: 2.5em;
+    color: #fff !important;
+    text-decoration: none;
+    border: 5px outset #00e1f7;
+    padding: .2em 0.6em;
+    text-transform: uppercase;
+    width: 17.5%;
+    position: absolute;
+}
+
+div#loginn{
+	position: absolute;
+
+}
+
+#titQuemSomos{
+	color:white !important; 
+	font-size: 2em !important;
+	padding-top: 3%;
+}
+
+#titleIndex {
+    color: white !important;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    font-size: 2em;
+
+}
+
+.about{
+	position: relative;
+	z-index: -1;
+}
+
+.icon-border{
+	border-radius: 50px;
+}
+
+.fa-whatsapp{
+	color: green;
+}
+
+#btnPrincipal{
+	border-radius: 50px;
+}
+
+#titleNossosProgramas{
+	font-size: 2em !important;
+	color: black !important;
+}
+
+#sobre{
+	background-color: #00bcc5;
+}
+
+#btnLaserGratisMenu{
+	border: solid 5px #00bcc5;
+	padding: .9em 0.5em !important;
+	border-radius: 50px;
+	
+}
+
+#btnLaserGratisMenu:before{
+	background: none!important;
+}
+
+#btnClubeAxiPrincipal.services-grids h4{
+	background-color: #7b1887;
+}
+
+#btnAxiBlackPrincipal.services-grids h4{
+	background-color: black;
+}
+
+#whats{
+	background-color: green;
+	position:fixed;
+	bottom:1%;
+	right:1%;
+	z-index: 999;
+}
+
+.whatsappIcon ul {
+	margin-top:1.5em;
+}
+
+.whatsappIcon ul li{
+	display: block; 
+    margin: 5px 0;
+    text-align: center; 
+}
+
+.whatsappIcon ul li a.fa {
+    font-size: 35px;
+    line-height: 45px;
+    color: #fff;
+    display: inline-block;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+    transition: .5s all;;
+}
+
+.social-wthree-icons.bnragile-icons{
+	position: relative !important;
+}
+
+.fa-instagram:before{
+	box-shadow: inset 0 0 0 48px #7b1887;
+}
+
+.titleProgramas{
+	font-size: 2em !important;
+	text-align: center;
+	border-radius: 50px;
+	color: white !important;
+	padding: 7px;
+}
+
+#titleClubeAxi{
+	background-color: #7b1887 !important;
+}
+
+#titleAxiBlack{
+	background-color: black !important;
+}
+
+#sessoes{
+	background-color: #00bcc5;
+	padding-top: 5%;
+	padding-bottom:5%;
+}
+
+.tabelaSessoesCelula{
+	text-align: center; 
+	color: white; 
+	border: 1px solid white;
+}
+
+#imgClubeAxi{
+	width: 30%;
+    position: relative;
+    margin-top: -25%;
+    margin-left: 58%;
+}
+
+#imgAxiBlack{
+    width: 25%;
+    position: relative;
+    margin-left: 15%;
+}
+
+.testeFlex{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-bottom: 4em;
+}
+
+.nav li  ul{
+	position:absolute; 
+	top:53px; 
+	
+	background-color:#fff; 
+	display:none;
+} 
+
+.nav li:hover ul, .nav li.over ul{display:block;}
+
+.nav li ul li{
+	display:block; 
+	width:150px;
+	height:75px;
+}
+
+
+@media screen and (min-width: 747px){
+	#titleIndex{
+		 bottom:19%;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 746px){
+	#titleIndex{
+		font-size: 1.5em;
+		bottom: 20%;
+	}
+}
+
+@media (min-width: 468px) and (max-width: 600px){
+	#titleIndex{
+		bottom: 23%;
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width:467px){
+	a.bnrw3-agiletext{
+		line-height: 1.5em;
+	}
+	#titleIndex{
+		left: 0%;
+    	right: 0%;
+		bottom: 23%;
+		font-size: 1.5em;
+	}
+}
+
+@media(max-width: 312px){
+	a.bnrw3-agiletext{
+		line-height: 1em;
+	}
+}
+
+@media (max-width: 990px){
+	#quemSomos{
+		font-size: 15px;
+	}
+}
+
+
+@media (max-width: 989px){
+	.fotoDep img{
+	}
+}
+@media (max-width:766px){
+	.listaLogin{
+		display: none;
+	}
+
+	.w3header{
+		padding: 0;
+	}
+}
+
+@media (min-width: 768px){
+	#mostrarLogin, #mostrarCadastro{
+		display: none;
+	}
+
+	.navbar-right {
+		/*float: left !important;*/
+	    margin-right: -15px;
+	    margin-left: 3%;
+	}
+}
+
+@media (min-width: 630px) and (max-width: 729px) {
+	.services-grids h4{
+		font-size: 25px;
+	}
+}
+
+@media (min-width: 455px) and (max-width: 629px){
+	.services-grids h4{
+		font-size: 25px;
+		margin: 0.5em -15px 0.2em;
+	}
+}
+
+@media(max-width: 454px){
+	.services-grids { 
+	    width: 100%;
+	    float: none;
+	}
+
+	.services-grids h4{
+		margin: 0;
+	}
+}
+
+@media (max-width: 540px){
+	#botoes{
+		flex-direction: column;
+	}
+	#btnAgendar{
+		margin-top: 10px;
+	}
+}
+
+@media (max-width: 622px){
+	p.lugaresFem{
+		font-size: 17px;
+	}
+
+	p.lugaresMas{
+		font-size: 15px;
+	}
+}
+
+@media (min-width: 992px){
+	#fotodepil{
+		margin-top: 15%;
+	}
+}
+
+
+@media (max-width: 475px){
+	#depilacaoFem, #depilacaoMas{
+		font-size: 1.9em;
+	}
+}
+
+@media (max-width: 503px){
+	p.lugaresFem{
+		font-size: 16px;
+	}
+
+	p.lugaresMas{
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 740px){
+	.indexBotaoText{
+		min-height: 480px;
+	}
+}
+
+@media (max-width: 390px){
+	#btnDepF, #btnDepM{
+		font-size: 10px;
+	}
+	#depilacaoFem, #depilacaoMas{
+		font-size: 1.7em;
+	}
+}
+
+@media (min-width: 569px) and (max-width: 830px) {
+
+	#imgClubeAxi {
+	    width: 45%;
+	    position: relative;
+	    margin-top: -38%;
+	    margin-left: 50%;
+	}
+
+	#imgAxiBlack {
+	    width: 35%;
+	    position: relative;
+	    margin-left: 5%;
+	}
+}
+
+@media (min-width: 468px) and (max-width: 568px){
+	#imgClubeAxi {
+	    width: 40%;
+	    position: relative;
+	    margin-top: -55%;
+	    margin-left: 54%;
+	}
+}
+
+@media(max-width: 467px){
+	#imgClubeAxi{
+	    width: 40%;
+	    position: relative;
+	    margin-top: -100%;
+	    margin-left: 54%;
+	}
+}

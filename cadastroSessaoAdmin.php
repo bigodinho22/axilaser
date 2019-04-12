@@ -55,14 +55,13 @@
 		}
 		if($verifica==1){
 		echo "é um horário agendado, você deseja apagar mesmo assim? Entre em contato com o cliente para avisa-lo!')){
-		window.location.href='php/apagarDia.php?id_data=$id_horario';
+		window.location.href='php/apagarHorarios.php?id_horario=$id_horario';
 		}else{
 			window.location.href='cadastroSessaoAdmin.php';
 		}";
 		}else{
 			echo "Você deseja realmente apagar esse horario?')){
-		}
-		window.location.href='php/apagarHorario.php?id_horario=$id_horario';
+				window.location.href='php/apagarHorario.php?id_horario=$id_horario';
 		}else{
 			window.location.href='cadastroSessaoAdmin.php';
 		}";

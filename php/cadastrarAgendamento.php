@@ -11,21 +11,7 @@
 	include_once "conexao.php";
 	if($senhaUsuario == $verificaSenhaUsuario){
 
-		$queryDia = "select data from datas where id_data=".$data;
-		$resultadoHorario = $conexao->query($queryDia);
-	
-		while ($rowHorario = $resultadoHorario->fetch_assoc() ) {
-			$dia=$rowHorario['data'];
-		}
-		$queryHorario = "select id_horario_data,TIME_FORMAT(horario, '%H:%i') as horario from datahora where id_horario_data=".$id_horario;
-		$resultadoHorario = $conexao->query($queryHorario);
-	
-		while ($rowHorario = $resultadoHorario->fetch_assoc() ) {
-			$horario=$rowHorario['horario'];
-			$id_horario=$rowHorario['id_horario_data'];
-		}
-
-		$query = "INSERT INTO agenda VALUES (NULL,'".$idUsuario."', NULL,'".$dia."','".$horario."', '".$regiao."', NULL)";
+		$query = "INSERT INTO agenda VALUES (NULL,'".$idUsuario."', NULL,'".$id_horario."', '".$regiao."', NULL)";
 
 		$querySenha ="UPDATE cliente SET senha='$senhaUsuario' WHERE id_cliente='$idUsuario';";
 

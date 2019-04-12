@@ -73,13 +73,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <h2 class="agileits-title">Editar Horário do dia <?php 
                 require "php/Conexao.php";
                 //Horario é recebido via get 
-                $id_Horario=$_GET['id_horario_data'];
+                $id_Horario=$_GET['id_horario'];
                 $query = "select id_data from datahora where id_horario_data=".$id_Horario;
                 $resultado = $conexao->query($query);
                 while($registro= $resultado->fetch_assoc()){
                     $dia = $registro["id_data"];
                 }
-                $query = "select data from datas where id_data=".$dia;
+                $query = "select DATE_FORMAT(data, '%d/%m/%Y') as data from datas where id_data=".$dia;
                 $resultado = $conexao->query($query);
                 while($registro= $resultado->fetch_assoc()){
                     echo $registro["data"];
@@ -89,12 +89,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="agileits_mail_grid_right1 agile_mail_grid_right1" id="formCadastroSessao">
                     <form action="php/alterarHorariosDisponiveis.php" method="post">
                         <span>
-                            <input type="hidden" name="id_horario" value="<?php echo $_GET["id_horario_data"]; ?>"/>
+                            <input type="hidden" name="id_horario" value="<?php echo $_GET["id_horario"]; ?>"/>
                             <i>Digite o novo horário:</i>
                             <input type="text" name="horario" placeholder="<?php
                                 require "php/Conexao.php";
                                 //Horario é recebido via get 
-                                $id_Horario=$_GET['id_horario_data'];
+                                $id_Horario=$_GET['id_horario'];
                                 $query = "select TIME_FORMAT(horario, '%H:%i') as horario from datahora where id_horario_data=".$id_Horario;
                                 $resultado = $conexao->query($query);
                                 while($registro= $resultado->fetch_assoc()){

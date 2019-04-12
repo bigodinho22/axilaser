@@ -8,7 +8,7 @@
 
     if($resultado->num_rows>0){
         while($registro = $resultado->fetch_assoc()){
-            $query2 = "select agendada,TIME_FORMAT(horario, '%H:%i') as horarioF from datahora where id_data = ".$registro["id_data"]." ORDER BY horario ASC";
+            $query2 = "select id_horario_data,agendada,TIME_FORMAT(horario, '%H:%i') as horarioF from datahora where id_data = ".$registro["id_data"]." ORDER BY horario ASC";
             $resultado2 = $conexao->query($query2);
             $resultado3 = $conexao->query($query2);
             echo 
@@ -19,12 +19,10 @@
                 
                 <td style= 'text-align: center; 
                             color: black; 
-                            border: 1px solid black; padding: 5px;' class='tdHorario'> <div class='opcoes'>
-                    <a href='./editarHorarios.php'>Editar</a>
-                    <a>Excluir</a>
+                            border: 1px solid black; padding: 5px;' class='tdHorario'>
                   </div>";
             while($registroHoras = $resultado2->fetch_assoc()){
-                echo $registroHoras["horarioF"]."<br />";
+                echo "<div class='opcoes'><a href='editarHorarios.php?id_horario=".$registroHoras["id_horario_data"]."'>Editar</a> || <a href='apagarHorarios.php?id_horario=".$registroHoras["id_horario_data"]."'>Apagar</a></div>".$registroHoras["horarioF"]."<br />";;
             }
             echo "
                     </td>

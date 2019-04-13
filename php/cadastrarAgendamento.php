@@ -11,7 +11,7 @@
 	include_once "conexao.php";
 	if($senhaUsuario == $verificaSenhaUsuario){
 
-		$query = "INSERT INTO agenda VALUES (NULL,'".$idUsuario."', NULL,'".$id_horario."', '".$regiao."', NULL)";
+		$query = "INSERT INTO agenda VALUES (NULL,'".$idUsuario."', NULL,'".$id_horario."', '".$regiao."', NULL, 0)";
 
 		$querySenha ="UPDATE cliente SET senha='$senhaUsuario' WHERE id_cliente='$idUsuario';";
 

@@ -5,6 +5,32 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
+<?php 
+		if(isset($_GET["id_agenda"]) & isset($_GET["alteracao"])){
+		require "php/Conexao.php";
+		$id_agenda=$_GET["id_agenda"];
+		$alteracao=$_GET["alteracao"];
+		$queryUpdate = "update agenda set compareceu=".$alteracao." where id_agenda=".$id_agenda;
+
+		$query = "select id_cliente from agenda";
+    
+    	$resultado = $conexao->query($query);
+    	while ($registro=$resultado->fetch_assoc()) {
+    		$querySelectNomeU = "select nome from cliente where id_cliente ='".$registro['id_cliente']."'";
+        	$resultadoNome = $conexao->query($querySelectNomeU);
+        	while($registroNome=$resultadoNome->fetch_assoc()){
+        		$nome=$registroNome["nome"];
+        	}
+    	}
+    	$resultadoUpdate=$conexao->query($queryUpdate);
+    	if($resultadoUpdate){
+    		echo "<script>
+			alert('".$nome." teve seu estado de comparecimento alterado');
+			window.location.href='indexAdmin.php';
+			</script>";
+    	}
+	}
+?>
 <html lang="en">
 <head>
 <title>Axilaser | Home</title> 

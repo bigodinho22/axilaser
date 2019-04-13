@@ -2,11 +2,16 @@
 
     include "conexao.php";
 
-    $query = "select id_horario_data,regiao,id_cliente from agenda";
+    $query = "select id_agenda,id_horario_data,regiao,id_cliente,compareceu from agenda";
     
     $resultado = $conexao->query($query);
 
     if($resultado->num_rows>0){
+        echo "<script>
+            function checkBox(i,j){
+                window.location.href='indexAdmin.php?id_agenda='+i+'&alteracao='+j;
+            }
+        </script>";
         while($registro = $resultado->fetch_assoc()){
             $queryIdData_Hora = "select id_data, TIME_FORMAT(horario, '%H:%i') as horarioF from datahora where id_horario_data=".$registro["id_horario_data"];
             $resultadoIdData_Hora = $conexao->query($queryIdData_Hora);
@@ -15,6 +20,8 @@
                 $id_data = $registroIdData_Horario["id_data"];
             }
             $queryData= "select DATE_FORMAT(data, '%d/%m/%Y') as data from datas where id_data=".$id_data." ORDER BY data ASC";
+            $compareceu=$registro["compareceu"]==1?'checked':'';
+            $alteracao=$registro["compareceu"]==1?0:1;
             $resultadoData = $conexao->query($queryData);
             while($registroData = $resultadoData->fetch_assoc()){
                 $querySelectNomeU = "select nome from cliente where id_cliente ='".$registro['id_cliente']."'";
@@ -31,7 +38,7 @@
                         <td style= 'text-align: center; 
                                 border: 1px solid black;'>".$registro["regiao"]."</td>
                         <td style= 'text-align: center; 
-                                border: 1px solid black;'><input type='checkbox' value='Compareceu'></td>
+                                border: 1px solid black;'><input type='checkbox' onclick='checkBox(".$registro['id_agenda'].", ".$alteracao.")'".$compareceu."></td>
                     </tr>";
             };
             }

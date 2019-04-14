@@ -105,7 +105,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="col-md-6 col-sm-6 col-xs-6 services-grids" id="btnAxiBlackPrincipal">
 						<a href="programas.php">
-							<h4>Programa AXI BLACK</h4>
+							<h4>Tratamento Tradicional</h4>
 						</a>
 				</div> 
 			</div>	 

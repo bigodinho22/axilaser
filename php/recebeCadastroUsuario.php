@@ -16,29 +16,18 @@
 
 		echo "<script language='javascript' type='text/javascript'> alert('Esse e-mail já está cadastrado'); window.location.href='../cadastro.php';</script>";
 
-	}else{
-			$queryInserirUsuario ="INSERT INTO cliente VALUES (NULL, '$nomeUsuario', '$emailUsuario', '$telefoneUsuario', NULL);";
+	}else{	
 
-			$resultado9=$conexao->query($queryInserirUsuario);
+		if($laser=="Sim"){
 
-			$querySelectIdUsuario = "SELECT id_cliente FROM cliente WHERE email = '$emailUsuario'";
+			echo "<script language='javascript' type='text/javascript'> alert('Desculpe! Só realizamos o laser grátis para aqueles que nunca fizeram!'); window.location.href='../index.php'; </script>";
 
-			$resultado10=$conexao->query($querySelectIdUsuario);
+		}else{
+			$_SESSION["nomeUsuario"] = $nomeUsuario;
+			$_SESSION["emailUsuario"] = $emailUsuario;
+			$_SESSION["telefoneUsuario"] = $telefoneUsuario;
 
-			while($registro = $resultado10->fetch_assoc()){
-				$idUsuario = $registro["id_cliente"];
-			}
-
-			if($laser=="Sim"){
-
-				echo "<script language='javascript' type='text/javascript'> alert('Desculpe! Só realizamos o laser grátis para aqueles que nunca fizeram!'); window.location.href='../index.php'; </script>";
-
-			}else{
-				$_SESSION["nomeUsuario"] = $nomeUsuario;
-				$_SESSION["emailUsuario"] = $emailUsuario;
-				$_SESSION["telefoneUsuario"] = $telefoneUsuario;
-
-				echo "<script language='javascript' type='text/javascript'> alert('Cadastro realizado com sucesso!'); window.location.href='../cadastroUsuario.php?idUsuario=$idUsuario';</script>";
+			echo "<script language='javascript' type='text/javascript'> alert('Cadastro realizado com sucesso!'); window.location.href='../cadastroUsuario.php';</script>";
 			}
 		}
 ?>

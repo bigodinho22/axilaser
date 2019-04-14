@@ -11,8 +11,7 @@
 			<br> 
 			</div>
 				<div class="agileits_mail_grid_right1 agile_mail_grid_right1" id="formAgendar">
-					<form action="php/cadastrarAgendamento.php" method="post">
-						<input type="hidden" name="idUsuario" value="<?php echo $_GET['idUsuario']?>" name="idUsuario">
+					<form action="php/cadastrarAgendamento.php" method="post">	
 						<span>
 							<i>Senha</i>
 							<input type="password" name="senhaUsuario" placeholder="">

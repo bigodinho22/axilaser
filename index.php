@@ -57,12 +57,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<ul class="nav navbar-nav navbar-right">
 								<li><a href="index.php">Home</a></li>
 								<li><a href="programas.php">Nossos Programas</a></li>
-								<li><a href="#">Depilação a Laser</a>
-					                <ul class="nav navbar-nav">
-					                    <li><a href="depilacao.php">Sobre a Depilação a Laser</a></li> 
-					                    <li><a href="formulario.php">Posso fazer Depilação a Laser?</a></li>
-					                </ul>
-					            </li>
+								<li><a href="depilacao.php">Depilação a Laser</a></li>  
+					            <li><a href="formulario.php" class="active">Pré Avaliação</a></li>
 								<li><a href="#contato">Contato </a></li>
 								<li><a href="cadastro.php" id="btnLaserGratisMenu">Laser Grátis</a></li>
 								<li><a href="login.php">Login</a></li>

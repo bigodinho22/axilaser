@@ -4,7 +4,7 @@
 <div class="contact">
 		<div class="container">
 			<div class="col-md-12 ab-text w3-agileits">
-			<h2 class="agileits-title">Posso fazer Depilação a Laser?</h2>
+			<h2 class="agileits-title">Pré Avaliação Online</h2>
 			<h3  style="text-align: center;">Responda o questionário e descubra se você pode <br> realizar a Depilação a Laser!</h3>
 			<br> 
 			</div>
@@ -70,7 +70,7 @@
 							</div>
 						</span>
 						<span>
-							<i>Qual a cor de seu pelo? (Região que vc deseja fazer depilação a laser)</i>
+							<i>Qual a cor de seu pelo? (Região que você deseja fazer depilação a laser)</i>
 							<select style="width: 100%;" name="corPelo">
 								<option value=1>Loiro</option>
 								<option value=1>Ruivo</option>

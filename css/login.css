@@ -20,8 +20,6 @@
 }
 
 #quemSomos{
-	margin-left: 10%; 
-	margin-right: 10%;
 	font-size: 20px;
 	margin-bottom: 5%;
 	color: white;
@@ -373,7 +371,7 @@ div#loginn{
 
 .testeFlex{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-wrap: wrap;
 }
 
@@ -414,6 +412,15 @@ div#loginn{
     padding-left: 5%;
     margin-right: 10%;
     margin-left: 10%;
+}
+
+#fotodepil{
+	margin-bottom: 5%;
+    margin-left: 10%;
+}
+
+.footer h3 {
+	color: #666666 !important;
 }
 
 @media screen and (min-width: 747px){
@@ -529,13 +536,6 @@ div#loginn{
 		font-size: 15px;
 	}
 }
-
-@media (min-width: 992px){
-	#fotodepil{
-		
-	}
-}
-
 
 @media (max-width: 475px){
 	#depilacaoFem, #depilacaoMas{

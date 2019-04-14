@@ -43,7 +43,6 @@
 .axiblack{ 
 	padding: 2%;
 	width: 50%;
-	float: right;
 }
 
 .axiblack h2{
@@ -341,7 +340,7 @@ div#loginn{
 }
 
 #titleAxiBlack{
-	background-color: black !important;
+	background-color: #666666 !important;
 }
 
 #sessoes{

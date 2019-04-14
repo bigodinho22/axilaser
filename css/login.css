@@ -266,7 +266,7 @@ div#loginn{
 
 #titleNossosProgramas{
 	font-size: 2em !important;
-	color: black !important;
+	color: #666666 !important;
 }
 
 #sobre{
@@ -289,7 +289,7 @@ div#loginn{
 }
 
 #btnAxiBlackPrincipal.services-grids h4{
-	background-color: black;
+	background-color: #666666;
 }
 
 #whats{

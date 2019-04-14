@@ -12,7 +12,7 @@
 			</div>
 			<hr style="border-color: #7b1887">
 			<div class="axiblack">
-				<h3 class="agileits-title titleProgramas" id="titleAxiBlack">Tratamentos Tradicionais</h2> 
+				<h3 class="agileits-title titleProgramas" id="titleAxiBlack">Tratamento Tradicional</h2> 
 				<p>Tratamento de <strong>10 sessões em todas as áreas do corpo </strong>  que o cliente desejar por um <strong>valor único e mensal</strong>.</p>
 			</div>
 		</div>

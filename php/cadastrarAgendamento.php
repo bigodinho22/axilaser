@@ -1,41 +1,42 @@
 <?php
 	session_start();
 
-	$data = $_POST["data"];
 	$id_horario = $_POST["horario"];
 	$regiao = $_POST["regiao"];
 	$senhaUsuario=md5($_POST["senhaUsuario"]);
 	$verificaSenhaUsuario=md5($_POST["verificaSenhaUsuario"]);
-	$idUsuario = $_POST["idUsuario"];
+	
+	$nomeUsuario=$_SESSION["nomeUsuario"];
+	$emailUsuario=$_SESSION["emailUsuario"];
+	$telefoneUsuario=$_SESSION["telefoneUsuario"];
 
-	include_once "conexao.php";
+	require "conexao.php";
+	
 	if($senhaUsuario == $verificaSenhaUsuario){
+		$queryInserirUsuario ="INSERT INTO cliente VALUES (NULL, '$nomeUsuario', '$emailUsuario', '$telefoneUsuario', '$senhaUsuario');";
 
-		$query = "INSERT INTO agenda VALUES (NULL,'".$idUsuario."', NULL,'".$id_horario."', '".$regiao."', NULL, 0)";
+		$resultado9=$conexao->query($queryInserirUsuario);	
 
-		$querySenha ="UPDATE cliente SET senha='$senhaUsuario' WHERE id_cliente='$idUsuario';";
+		$querySelectID="select id_cliente from cliente where email='".$emailUsuario."'";
+		$resultadoSelectID=$conexao->query($querySelectID);
+		while($rowId=$resultadoSelectID->fetch_assoc()){
+			echo "que role";	 
+			$idUsuario=$rowId["id_cliente"];
+		}
+		$queryAgenda = "INSERT INTO agenda VALUES (NULL,'".$idUsuario."', NULL,'".$id_horario."', '".$regiao."', NULL, 0)";
 
-		$queryAgendamento="UPDATE datahora SET agendada=1 WHERE id_horario_data=$id_horario;";
+		$queryDataHora="UPDATE datahora SET agendada=1 WHERE id_horario_data=$id_horario;";
 
-	    $resultado = $conexao->query($query);
+	    $resultado = $conexao->query($queryAgenda);
 
-	    $resultado2 = $conexao->query($querySenha);
-
-	    $resultado3 = $conexao->query($queryAgendamento);
+	    $resultado3 = $conexao->query($queryDataHora);
 	    
-	    if(($resultado)&($resultado2)&($resultado3)){
+	    if(($resultado)&($resultado9)&($resultado3)){
 	    	echo "<script language='javascript' type='text/javascript'>alert('Agendamento realizado com sucesso!'); window.location.href='../login.php';</script>";
 
 	    }
 
 	}else{
-		unset ($_SESSION["nomeUsuario"]);
-		unset ($_SESSION["emailUsuario"]);
-		unset ($_SESSION["telefoneUsuario"]);
-		unset ($_SESSION["senhaUsuario"]);
-		unset ($_SESSION["idUsuario"]);
-		unset ($_SESSION["logado"]);
-
-		echo "<script language='javascript' type='text/javascript'> alert('Senhas diferentes!'); window.location.href='../cadastroUsuario.php?idUsuario=$idUsuario';</script>";
+		echo "<script language='javascript' type='text/javascript'> alert('Senhas diferentes!'); window.location.href='../cadastroUsuario.php?';</script>";
 	}
 ?>

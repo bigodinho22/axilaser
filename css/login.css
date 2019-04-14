@@ -410,6 +410,13 @@ div#loginn{
 	color: #00bcc5 !important;
 }
 
+.regioesContainer{
+	padding-right: 5%;
+    padding-left: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
 @media screen and (min-width: 747px){
 	#titleIndex{
 		 bottom:19%;

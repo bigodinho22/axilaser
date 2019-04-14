@@ -373,9 +373,8 @@ div#loginn{
 
 .testeFlex{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-wrap: wrap;
-	margin-bottom: 4em;
 }
 
 .nav li  ul{
@@ -533,7 +532,7 @@ div#loginn{
 
 @media (min-width: 992px){
 	#fotodepil{
-		margin-top: 15%;
+		
 	}
 }
 

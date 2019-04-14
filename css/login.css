@@ -406,6 +406,9 @@ div#loginn{
 	padding:.9em 0 !important;
 }
 
+.corPreAvaliacao{
+	color: #00bcc5 !important;
+}
 
 @media screen and (min-width: 747px){
 	#titleIndex{

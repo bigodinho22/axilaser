@@ -27,6 +27,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- web-fonts -->
 <link href='//fonts.googleapis.com/css?family=Text+Me+One' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 <!-- //web-fonts --> 
 <link rel="stylesheet" type="text/css" href="css/login.css">
 </head> 
@@ -50,12 +51,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<ul class="nav navbar-nav navbar-right">
 								<li><a href="index.php">Home</a></li>
 								<li><a href="programas.php">Nossos Programas</a></li>
-								<li><a href="#">Depilação a Laser</a>
-					                <ul class="nav navbar-nav">
-					                    <li><a href="depilacao.php">Sobre a Depilação a Laser</a></li> 
-					                    <li><a href="formulario.php">Posso fazer Depilação a Laser?</a></li>
-					                </ul>
-					            </li> 
+								<li><a href="depilacao.php">Depilação a Laser</a></li>  
+					            <li><a href="formulario.php" class="corPreAvaliacao">Pré Avaliação</a></li>
 								<li><a href="#contato">Contato </a></li>
 								<li><a href="cadastro.php" id="btnLaserGratisMenu">Laser Grátis</a></li>
 								<li><a href="login.php">Login</a></li>

@@ -28,9 +28,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- web-fonts -->
 <link href='//fonts.googleapis.com/css?family=Text+Me+One' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 <!-- //web-fonts --> 
 <link rel="stylesheet" type="text/css" href="css/login.css">
 </head> 
@@ -58,7 +56,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<li><a href="index.php">Home</a></li>
 								<li><a href="programas.php">Nossos Programas</a></li>
 								<li><a href="depilacao.php">Depilação a Laser</a></li>  
-					            <li><a href="formulario.php" class="active">Pré Avaliação</a></li>
+					            <li><a href="formulario.php" class="corPreAvaliacao">Pré Avaliação</a></li>
 								<li><a href="#contato">Contato </a></li>
 								<li><a href="cadastro.php" id="btnLaserGratisMenu">Laser Grátis</a></li>
 								<li><a href="login.php">Login</a></li>
@@ -119,12 +117,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //services --> 
 	<div id="sobre">
 		<div class="container">
-			<h3 class="agileits-title" id="titQuemSomos" > QUEM SOMOS NÓS?</h3> 
-			<br>
-			<p id="quemSomos">A Axilaser iníciou sua história através da Fisioterauta Dermatofuncional Jeisianny Carvalho e seu esposo 
-			com espírito empreendedor Erik Salles.
-			Nascida com o objetivo em oferecer o que há de melhor em tecnologia de Depilação a Laser, a <strong>AXILASER</strong> esta no mercado para proporcionar ao seus clientes a <strong>LIBERDADE</strong> sem perder <strong>QUALIDADE</strong>.</p>
-			<div class="clearfix"> </div>
+			<div class="testeFlex">
+				<div>
+					<h3 class="agileits-title" id="titQuemSomos" > QUEM SOMOS NÓS?</h3> 
+					<br>
+					<p id="quemSomos">A Axilaser iníciou sua história através da Fisioterauta Dermatofuncional Jeisianny Carvalho e seu esposo 
+					com espírito empreendedor Erik Salles.
+					Nascida com o objetivo em oferecer o que há de melhor em tecnologia de Depilação a Laser, a <strong>AXILASER</strong> esta no mercado para proporcionar ao seus clientes a <strong>LIBERDADE</strong> sem perder <strong>QUALIDADE</strong>.</p>
+				</div>
+				<div>
+					<video src="videos/axilaser.mp4" controls id="fotodepil" />
+				</div>
+			</div>
 		</div>
 	</div>
 			<!-- //about-section2 -->

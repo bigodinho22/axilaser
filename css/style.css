@@ -20,7 +20,7 @@ body a{
 }
 h1,h2,h3,h4,h5,h6{
 	margin:0;	
-	font-family: 'Text Me One', sans-serif;
+	font-family: 'Fjalla One', sans-serif;
 }
 p{
 	margin:0;
@@ -500,7 +500,7 @@ h3.agileits-title.w3title2,h2.agileits-title.w3title2 {
     display: block;
     font-weight: 400;
     font-style: italic;
-    font-family: 'Text Me One', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
 }
 .book-reservation label i {
     font-size: 0.8em;

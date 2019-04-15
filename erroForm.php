@@ -2,7 +2,7 @@
 	require 'header.php';
 ?>
 	<!-- about -->
-	<div class="about ">
+	<div class="about " style="z-index:0 !important">
 		<div class="container"> 
 			<!-- about-section2 -->
 			<!-- //about-section2 -->
@@ -38,9 +38,8 @@
 						echo "<p>Se você já teve câncer, é necessário realizar uma avaliação presencial para sabermos se é possível ou não realizar os procedimentos, entre em contato conosco pelos dados no rodapé para maiores informações.</p>";
 					}
 				}else{
-					echo "<p>Não podemos seguir com o seu agendamento, pois o laser grátis é uma sessão de experiência que proporcionamos para quem nunca fez depilação a laser antes.<br />
-						<a href='programas.php'>Clique aqui para conhecer os nossos programas</a>
-					</p>";
+					echo "<p>Não podemos seguir com o seu agendamento, pois o laser grátis é uma sessão de experiência que proporcionamos para quem nunca fez depilação a laser antes.</p><br />
+						<a href='programas.php'>Clique aqui para conhecer os nossos programas</a>";
 				}
 				?>
 			</div>

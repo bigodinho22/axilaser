@@ -473,10 +473,17 @@ div#loginn{
     box-shadow: 0px -6px 5px rgb(222, 222, 222);
 }
 
+.tradicionais{
+	margin-left: 15%;
+}
 
 @media (max-width: 1199px){
 	.programas{
 		margin-bottom: 10%;
+	}
+
+	.tradicionais{
+		margin-left: 0;
 	}
 }
 

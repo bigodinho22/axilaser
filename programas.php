@@ -11,7 +11,7 @@
 				<br>
 				<br>
 					<div class="row">
-						<div class="row mt-md-5 pt-md-5 programas">
+						<div class="row mt-md-5 pt-md-5" style="width: 100%">
 							<div class="col-lg-4">
 								<div class="abt-block mb-lg-0 mb-md-5 programas">
 									<div class="serv_abs serv_bottom" style="background-color: #00bcc5 !important"></div>
@@ -40,7 +40,7 @@
 						</div>
 						<br>
 						<br>
-						<div class="col-lg-8 mx-auto mt-lg-5">
+						<div class="col-lg-8 mx-auto mt-lg-5 tradicionais">
 							<div class="row">
 								<div class="col-lg-6 my-lg-0 my-md-5 programas">
 									<div class="abt-block mt-sm-0">

@@ -9,8 +9,8 @@
 					<span><a href="mailto:depilacaoalaser@axilaser.com.br">depilacaoalaser@axilaser.com.br</a></span>
 					<div class="social-wthree-icons bnragile-icons">
 						<ul>
-							<li><a href="https://www.facebook.com/axilaser/" class="fa fa-facebook icon icon-border facebook"> </a></li>
-							<li><a href="https://www.instagram.com/axilaser/?hl=pt-br" class="fa fa-instagram icon icon-border"> </a></li>
+							<li><a href="https://www.facebook.com/axilaser/" class="fa fa-facebook icon icon-border facebook" target="_blank"> </a></li>
+							<li><a href="https://www.instagram.com/axilaser/?hl=pt-br" class="fa fa-instagram icon icon-border" target="_blank"> </a></li>
 						</ul>
 					</div> 
 				</p>
@@ -24,7 +24,7 @@
 	</div>
 	<div class="footer-copy">
 		<div class="container">
-			<p>© 2019 Axilaser. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a> | Editado por <a href="https://www.linkedin.com/in/let%C3%ADcia-fernandes-573b1b16b/">Letícia Fernandes</a> e <a href="https://www.linkedin.com/in/edilson-santana-99bab011a">Edilson Santana</a></p>
+			<p>© 2019 Axilaser. All rights reserved | Design by <a href="http://w3layouts.com" target="_blank">W3layouts</a> | Editado por <a href="https://www.linkedin.com/in/let%C3%ADcia-fernandes-573b1b16b/" target="_blank">Letícia Fernandes</a> e <a href="https://www.linkedin.com/in/edilson-santana-99bab011a" target="_blank">Edilson Santana</a></p>
 		</div>
 	</div>
 	<!-- //footer --> 

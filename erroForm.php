@@ -19,6 +19,7 @@
 					$corPelo=$_GET["corPelo"]; 
 					$roacutan=$_GET["roacutan"]; 
 					$cancerVitiligo=$_GET["cv"];
+					$pelo=$_GET["pelo"];
 					if($fototipo=="VI"){
 						echo "<p>Não é possível realizar a depilação com o seu fototipo, esperamos que compreenda. </p>";
 					}
@@ -36,6 +37,9 @@
 					}
 					if($cancerVitiligo==2){
 						echo "<p>Se você já teve câncer, é necessário realizar uma avaliação presencial para sabermos se é possível ou não realizar os procedimentos, entre em contato conosco pelos dados no rodapé para maiores informações.</p>";
+					}
+					if($pelo==1){
+						echo "<p>Como o pelo da região é fino, será necessário agendar uma avaliação em uma de nossas clínicas para sabermos se é possível ou não realizarmos as sessões. Entre em contato utilizando as informações do rodapé da página para mais informações. </p>";
 					}
 				}else{
 					echo "<p>Não podemos seguir com o seu agendamento, pois o laser grátis é uma sessão de experiência que proporcionamos para quem nunca fez depilação a laser antes.</p><br />

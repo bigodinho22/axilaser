@@ -95,6 +95,14 @@
 								<option value=3>Não</option>
 							</select>
 						</span>
+						<span>
+							<i>Qual a espessura do pelo na região que você deseja fazer a sessão?</i>
+							<select style="width: 100%;" name="pelo">
+								<option value=1>Fino</option>
+								<option value=2>Médio</option>
+								<option value=3>Grosso</option>
+							</select>
+						</span>
 						<div class="w3_submit">
 							<input type="submit" value="Enviar">
 						</div>

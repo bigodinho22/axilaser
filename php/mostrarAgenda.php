@@ -6,11 +6,7 @@
         $queryIdNome="select id_cliente from cliente where nome LIKE '%".$nomePesquisa."%'";
 
         $resultadoIdNome=$conexao->query($queryIdNome);
-        echo "<script>
-                        function checkBox(i,j){
-                            window.location.href='resultadoPesquisa.php?id_agenda='+i+'&alteracao='+j;
-                        }
-                    </script>";
+        
         if($resultadoIdNome->num_rows>0){
         while($idsNome=$resultadoIdNome->fetch_assoc()){
                 $query = "select id_agenda,id_horario_data,regiao,id_cliente,compareceu from agenda where id_cliente=".$idsNome["id_cliente"];
@@ -56,7 +52,7 @@
             }
         }else{
             echo "<h3 style='text-align:center;'>Nenhum Resultado Encontrado</h3>";
-        }
+        };
         }else{
             $query = "select id_agenda,id_horario_data,regiao,id_cliente,compareceu from agenda";
             

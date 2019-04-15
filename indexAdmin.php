@@ -39,6 +39,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta name="keywords" content="Fit&Spa Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script>
+    function checkBox(i,j){
+        window.location.href='resultadoPesquisa.php?id_agenda='+i+'&alteracao='+j;
+    }
+</script>
 <!-- Custom Theme files -->
 <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
 <link href="css/style.css" type="text/css" rel="stylesheet" media="all"> 
@@ -97,8 +102,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<br>
 			<br>
 			<form action="resultadoPesquisa.php" method="post">
-				<input type="text" name="nomePesquisa" placeholder="Digite um nome para pesquisar" />
-				<input type="submit" value="Pesquisar"/>
+				<div class="inputPesquisa">
+					<input type="text" class="searchBar" name="nomePesquisa" placeholder="Digite um nome para pesquisar" />
+					<input type="submit" class="btnSearchBar" value="Pesquisar"/>
+				</div>
 			</form>
 			<table style="color: black; width: 100%;">
 				<tr>
@@ -116,6 +123,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<?php
 					include_once 'php/mostrarAgenda.php';
 				?>
+			</table>
 		</div>
 	</div>
 	<?php

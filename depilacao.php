@@ -5,8 +5,8 @@
 	<div class="about"> 
 		<div class="container">
 			<div class="about-section abt-w3sec2 w3ls">
-				<h2 class="agileits-title">SOBRE DEPILAÇÃO A LASER</h2> 
-				<p style="color:black !important;">Depilação a laser é uma técnica  de remoção de pelos, através da energia luminosa dos raios de laser atraídos pela melanina presente no pelo.
+				<h2 class="agileits-title" style="color: #666666 !important;">SOBRE DEPILAÇÃO A LASER</h2> 
+				<p class="col-md-10" id="textSobreDep">Depilação a laser é uma técnica  de remoção de pelos, através da energia luminosa dos raios de laser atraídos pela melanina presente no pelo.
 				O método age de forma progressiva. Pode chegar certa de aproximadamente 10 sessões com intervalos  entre 30 a 35 dias entre uma sessão e outra e garante a remoção de 95% dos pelos.
 				O laser atinge somente pelos escuros e grossos.</p>
 			</div>

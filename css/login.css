@@ -422,6 +422,13 @@ div#loginn{
 	color: #666666 !important;
 }
 
+#textSobreDep{
+	color:black !important; 
+	text-align: center;     
+	margin-left: 10%;
+    margin-right: 10%;
+}
+
 @media screen and (min-width: 747px){
 	#titleIndex{
 		 bottom:19%;

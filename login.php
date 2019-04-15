@@ -4,7 +4,7 @@
 	<!-- contact -->
 	<div class="contact">
 		<div class="container">
-			<h2 class="agileits-title">Login</strong></h2>
+			<h2 class="agileits-title">Login</h2>
 				<div class="agileits_mail_grid_right1 agile_mail_grid_right1" id="formLogin">
 					<form action="php/logar.php" method="post">
 						<span>

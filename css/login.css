@@ -29,7 +29,8 @@
 
 .clubeaxi{
 	padding: 2%;
-	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
 }
 
 .clubeaxi h2{
@@ -42,7 +43,8 @@
 
 .axiblack{ 
 	padding: 2%;
-	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
 }
 
 .axiblack h2{
@@ -229,7 +231,7 @@ div#loginn{
 
 #titQuemSomos{
 	color:white !important; 
-	font-size: 2em !important;
+	font-size: 2.5em !important;
 	padding-top: 3%;
 }
 
@@ -260,7 +262,7 @@ div#loginn{
 }
 
 #titleNossosProgramas{
-	font-size: 2em !important;
+	font-size: 2.5em !important;
 	color: #666666 !important;
 }
 
@@ -368,7 +370,7 @@ div#loginn{
 
 .testeFlex{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-wrap: wrap;
 }
 
@@ -471,6 +473,12 @@ div#loginn{
     box-shadow: 0px -6px 5px rgb(222, 222, 222);
 }
 
+
+@media (max-width: 1199px){
+	.programas{
+		margin-bottom: 10%;
+	}
+}
 
 @media screen and (min-width: 747px){
 	#titleIndex{

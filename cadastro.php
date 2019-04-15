@@ -4,10 +4,10 @@
 	<!-- contact -->
 	<div class="contact">
 		<div class="container">
-			<h2 class="agileits-title">Agende o seu laser <strong>GRÁTIS</strong></h2>
-			<h3 style="text-align: center;">Preencha com seus dados <strong>abaixo</strong></h3>
-			<br>
 				<div class="agileits_mail_grid_right1 agile_mail_grid_right1" id="formLogin">
+					<h2 class="agileits-title" style="color: #666666 !important">Agende o seu laser <strong>GRÁTIS</strong></h2>
+					<h3 style="text-align: center; color: #666666 !important">Preencha com seus dados <strong>abaixo</strong></h3>
+					<br>
 					<form action="php/recebeCadastroUsuario.php" method="post">
 						<span>
 							<i>Nome</i>

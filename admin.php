@@ -4,8 +4,9 @@
 	<!-- contact -->
 	<div class="contact">
 		<div class="container">
-			<h2 class="agileits-title">Login Admin</strong></h2>
+			
 				<div class="agileits_mail_grid_right1 agile_mail_grid_right1" id="formLoginAdm">
+					<h2 class="agileits-title" style="color: #666666">Login Admin</strong></h2>
 					<form action="php/logarAdmin.php" method="post">
 						<span>
 							<i>Login</i>

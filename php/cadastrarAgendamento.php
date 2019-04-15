@@ -11,7 +11,9 @@
 	$telefoneUsuario=$_SESSION["telefoneUsuario"];
 
 	require "conexao.php";
-	
+	if($id_horario=="invalido"){
+		echo "<script language='javascript' type='text/javascript'> alert('Insira um horário válido'); window.location.href='../cadastroUsuario.php?';</script>";
+	}
 	if($senhaUsuario == $verificaSenhaUsuario){
 		$queryInserirUsuario ="INSERT INTO cliente VALUES (NULL, '$nomeUsuario', '$emailUsuario', '$telefoneUsuario', '$senhaUsuario');";
 
@@ -19,8 +21,7 @@
 
 		$querySelectID="select id_cliente from cliente where email='".$emailUsuario."'";
 		$resultadoSelectID=$conexao->query($querySelectID);
-		while($rowId=$resultadoSelectID->fetch_assoc()){
-			echo "que role";	 
+		while($rowId=$resultadoSelectID->fetch_assoc()){	 
 			$idUsuario=$rowId["id_cliente"];
 		}
 		$queryAgenda = "INSERT INTO agenda VALUES (NULL,'".$idUsuario."', NULL,'".$id_horario."', '".$regiao."', NULL, 0)";

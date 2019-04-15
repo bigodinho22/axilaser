@@ -24,6 +24,7 @@
 						<span>
 							<i>Data</i>
 							<select name="data" style="width: 100%;" id="data">
+								<option value="inavalido">Selecione um dia</option>
 								 <?php
 									$queryDatas = "SELECT id_data, DATE_FORMAT(data, '%d/%m/%Y') as data from datas ORDER BY data ASC";
 									$resultadoDatas = $conexao->query($queryDatas);
@@ -38,7 +39,7 @@
 						<span>
 							<i>Horário</i>
 							<select name="horario" style="width: 100%;" id="horario">
-								<option value="">Escolha o dia para ter acesso aos horários</option>
+								<option value="invalido">Escolha o dia para ter acesso aos horários</option>
 							</select>
 						</span>
 						<span>
@@ -50,7 +51,7 @@
 						</span>
 						<br>
 						<div class="w3_submit">
-							<input type="submit" value="Agendar">
+							<input type="submit" id="btnSubmit" value="Agendar" >
 						</div>
 					</form>
 					<script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -65,15 +66,18 @@
 									$('#horario').hide();
 									$('.carregando').show();
 									$.getJSON('php/horarios_post.php?search=',{id_data: $(this).val(), ajax: 'true'}, function(j){
-										var options = '<option value="">Escolha um horário</option>';	
+										var options = '';
+										if(j[0].id!='invalido'){
+											options='<option value="invalido">Escolha um horário</option>';
+										}
 										for (var i = 0; i < j.length; i++) {
 											options += '<option value="' + j[i].id + '">' + j[i].horario + '</option>';
 										}	
-										$('#horario').html(options).show();
+										$('#horario').html(options).show();										
 										$('.carregando').hide();
 									});
 								} else {
-									$('#horario').html('<option value="">– Escolha um horário –</option>');
+									$('#horario').html('<option value="invalido">– Escolha um horário –</option>');
 								}
 							});
 						});

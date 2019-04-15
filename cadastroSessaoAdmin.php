@@ -159,25 +159,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<input type="submit" value="Adicionar Datas">
 						</div>
 					</form>
-					<table>
-						<tr>
-							<th style= "text-align: center; 
-                            color: black; 
-                            border: 1px solid black; padding: 5px;">Dia</th>
-							<th style= "text-align: center; 
-                            color: black; 
-                            border: 1px solid black; padding: 5px;">Horários</th>
-                            <th style= "text-align: center; 
-                            color: black; 
-                            border: 1px solid black; padding: 5px;">Agendamento</th>
-                            <th style= "text-align: center; 
-                            color: black; 
-                            border: 1px solid black; padding: 5px;">Opções</th>
-						</tr>
-						<?php
-							include_once 'php/mostrarDatasDisponiveis.php';
-						?>
-					</table>
+					<div class="tabelaAdminDiv">
+						<table class="tabelaAdmin">
+							<tr>
+								<th style= "text-align: center; 
+	                            color: black; 
+	                            border: 1px solid black; padding: 5px;">Dia</th>
+								<th style= "text-align: center; 
+	                            color: black; 
+	                            border: 1px solid black; padding: 5px;">Horários</th>
+	                            <th style= "text-align: center; 
+	                            color: black; 
+	                            border: 1px solid black; padding: 5px;">Agendamento</th>
+	                            <th style= "text-align: center; 
+	                            color: black; 
+	                            border: 1px solid black; padding: 5px;">Opções</th>
+							</tr>
+							<?php
+								include_once 'php/mostrarDatasDisponiveis.php';
+							?>
+						</table>
+					</div>
 				</div>
 		</div>
 	</div>

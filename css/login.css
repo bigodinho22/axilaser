@@ -17,7 +17,7 @@
 	align-items: center;
 }
 .searchBar{
-	width: 85%;
+	width: 69%;
 	height: 92%;	
 	padding: 3px;
  	border: none;	 
@@ -25,6 +25,7 @@
   	font-weight: 200;
 }
 .btnSearchBar{
+	width: 30%;
 	height: 92%;
 	background-color: #00bcc5;
 	border:none;
@@ -44,6 +45,14 @@
 }
 .spanHorario{
 	padding: 10px 0 !important;
+}
+.tabelaAdmin{
+	margin-top: 1%;
+}
+.tabelaAdminDiv{
+	display: flex;
+	justify-content: center;
+	width: 100%;
 }
 .navCor{
 	background-color: white;  

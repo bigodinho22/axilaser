@@ -24,7 +24,7 @@
 	</div>
 	<div class="footer-copy">
 		<div class="container">
-			<p>© 2019 Axilaser. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a> | Editado por <a href="mailto:lemayara16@gmail.com">Letícia Fernandes</a></p>
+			<p>© 2019 Axilaser. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a> | Editado por <a href="https://www.linkedin.com/in/let%C3%ADcia-fernandes-573b1b16b/">Letícia Fernandes</a> e <a href="https://www.linkedin.com/in/edilson-santana-99bab011a">Edilson Santana</a></p>
 		</div>
 	</div>
 	<!-- //footer --> 

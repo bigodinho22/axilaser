@@ -26,7 +26,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     	if($resultadoUpdate){
     		echo "<script>
 			alert('".$nome." teve seu estado de comparecimento alterado');
-			window.location.href='indexAdmin.php';
+			window.location.href='resultadoPesquisa.php';
 			</script>";
     	}
 	}
@@ -93,13 +93,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<br>
 	<div class="agenda">
 		<div class="container">
-			<h1 style= "text-align: center;" >Agenda</h1>
+			<h1 style= "text-align: center;" >Resultado da pesquisa por: <?php echo $_POST["nomePesquisa"]?></h1>
 			<br>
 			<br>
-			<form action="resultadoPesquisa.php" method="post">
-				<input type="text" name="nomePesquisa" placeholder="Digite um nome para pesquisar" />
-				<input type="submit" value="Pesquisar"/>
-			</form>
 			<table style="color: black; width: 100%;">
 				<tr>
 					<th style= "text-align: center; 
@@ -115,7 +111,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</tr>
 				<?php
 					include_once 'php/mostrarAgenda.php';
-				?>
+				?>	
+			</table>
 		</div>
 	</div>
 	<?php

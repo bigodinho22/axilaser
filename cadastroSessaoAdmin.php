@@ -84,6 +84,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta name="keywords" content="Fit&Spa Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script>
+	function mouseOver(i) {
+	  document.getElementById('opcoes'+i).style.display = 'block';
+	}
+
+	function mouseOut(i) {
+	  document.getElementById('opcoes'+i).style.display = 'none';
+	}
+</script>
 <!-- Custom Theme files -->
 <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
 <link href="css/style.css" type="text/css" rel="stylesheet" media="all"> 

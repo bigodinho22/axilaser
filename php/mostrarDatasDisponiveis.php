@@ -11,15 +11,6 @@
             $resultado2 = $conexao->query($query2);
             $resultado3 = $conexao->query($query2);
             echo "
-                <script>
-                    function mouseOver(i) {
-                      document.getElementById('opcoes'+i).style.display = 'block';
-                    }
-
-                    function mouseOut(i) {
-                      document.getElementById('opcoes'+i).style.display = 'none';
-                    }
-                    </script>
                 <tr>
                 <td style= 'text-align: center; 
                             color: black; 
@@ -30,7 +21,8 @@
                             border: 1px solid black; padding: 5px;' >
                   ";
             while($registroHoras = $resultado2->fetch_assoc()){
-                echo "<div style='display:none;'id='opcoes".$registroHoras["id_horario_data"]."'><a href='editarHorarios.php?id_horario=".$registroHoras["id_horario_data"]."'>Editar</a> || <a href='cadastroSessaoAdmin.php?id_horario=".$registroHoras["id_horario_data"]."'>Apagar</a></div><span  onMouseOver='mouseOver(".$registroHoras["id_horario_data"].")'
+                echo "<div class='opcoesDiv' id='opcoes".$registroHoras["id_horario_data"]."' onMouseOver='mouseOver(".$registroHoras["id_horario_data"].")'
+   onMouseOut='mouseOut(".$registroHoras["id_horario_data"].")'><a href='editarHorarios.php?id_horario=".$registroHoras["id_horario_data"]."'>Editar</a> || <a href='cadastroSessaoAdmin.php?id_horario=".$registroHoras["id_horario_data"]."'>Apagar</a></div><span  class='spanHorario' onMouseOver='mouseOver(".$registroHoras["id_horario_data"].")'
    onMouseOut='mouseOut(".$registroHoras["id_horario_data"].")' style='display:inline'>".$registroHoras["horarioF"]."</span><br />";
             }
             echo "

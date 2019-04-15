@@ -7,9 +7,14 @@
 			<!-- about-section2 -->
 			<!-- //about-section2 -->
 			<div class="TitleErro">
-				<h3 class="agileits-title sub-titleErro">Infelizmente você não pode realizar as sessões pelos devidos motivos:</h3>
+				<h3 class="agileits-title sub-titleErro"><?php if(!isset($_GET["laser"])){
+					echo "Infelizmente você não pode realizar as sessões pelos devidos motivos:";
+				}else{
+					echo "Não podemos realizar sua sessão de laser grátis";
+				}?></h3>
 				<br /> 
 				<?php
+				if(!isset($_GET["laser"])){
 					$fototipo=$_GET["fototipo"];
 					$corPelo=$_GET["corPelo"]; 
 					$roacutan=$_GET["roacutan"]; 
@@ -32,6 +37,11 @@
 					if($cancerVitiligo==2){
 						echo "<p>Se você já teve câncer, é necessário realizar uma avaliação presencial para sabermos se é possível ou não realizar os procedimentos, entre em contato conosco pelos dados no rodapé para maiores informações.</p>";
 					}
+				}else{
+					echo "<p>Não podemos seguir com o seu agendamento, pois o laser grátis é uma sessão de experiência que proporcionamos para quem nunca fez depilação a laser antes.<br />
+						<a href='programas.php'>Clique aqui para conhecer os nossos programas</a>
+					</p>";
+				}
 				?>
 			</div>
 		</div>

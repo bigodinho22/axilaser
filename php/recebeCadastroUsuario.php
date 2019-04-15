@@ -20,7 +20,7 @@
 
 		if($laser=="Sim"){
 
-			echo "<script language='javascript' type='text/javascript'> alert('Desculpe! Só realizamos o laser grátis para aqueles que nunca fizeram!'); window.location.href='../index.php'; </script>";
+			echo "<script language='javascript' type='text/javascript'> window.location.href='../erroForm?laser=1'; </script>";
 
 		}else{
 			$_SESSION["nomeUsuario"] = $nomeUsuario;

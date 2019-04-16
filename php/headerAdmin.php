@@ -59,4 +59,3 @@
 		<!-- //header -->  
 	</div>	 
 	<!-- //banner --> 
-	teste

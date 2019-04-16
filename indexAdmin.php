@@ -5,7 +5,10 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
-<?php 
+<?php
+	include 'php/validarLoginAdmin.php';
+?>
+<?php
 		if(isset($_GET["id_agenda"]) & isset($_GET["alteracao"])){
 		require "php/Conexao.php";
 		$id_agenda=$_GET["id_agenda"];

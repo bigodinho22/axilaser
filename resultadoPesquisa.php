@@ -113,6 +113,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					include_once 'php/mostrarAgenda.php';
 				?>	
 			</table>
+			<div style="display:flex;justify-content: center;margin-top: 2%;"> 
+			<input type="button" onclick="window.location.href='cadastroSessaoAdmin.php'" value="Voltar" />
 		</div>
 	</div>
 	<?php

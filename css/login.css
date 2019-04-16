@@ -530,9 +530,14 @@ div#loginn{
 @media (max-width: 1199px){
 	.programas{
 		margin-bottom: 10%;
+
 	}
 
 	.tradicionais{
+		margin-left: 0;
+	}
+
+	.clubeAxiPagProg{
 		margin-left: 0;
 	}
 }

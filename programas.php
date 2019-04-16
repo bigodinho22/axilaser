@@ -11,9 +11,9 @@
 				<br>
 				<br>
 					<div class="row">
-						<div class="row mt-md-5 pt-md-5" style="width: 100%">
-							<div class="col-lg-4">
-								<div class="abt-block mb-lg-0 mb-md-5 programas">
+						<div class="row mt-md-5 pt-md-5 clubeAxiPagProg" style="width: 100%">
+							<div class="col-lg-4 my-lg-0 my-md-5 programas">
+								<div class="abt-block">
 									<div class="serv_abs serv_bottom" style="background-color: #00bcc5 !important"></div>
 									<h3>Pacote Clear</h3>
 									<p>Possui a <strong>liberdade</strong> de escolha na quantidade de sessões que o cliente deseja, ou seja, o cliente escolhe se deseja fazer 03, 05 ou 10 sessões, <strong>sem mudar o valor do tratamento</strong>.</p>
@@ -26,7 +26,7 @@
 									<p>Texto</p>
 								</div>
 							</div>
-							<div class="col-lg-4 mt-lg-0 mt-md-5">
+							<div class="col-lg-4 my-lg-0 my-md-5">
 								<div class="abt-block">
 									<div class="serv_abs serv_bottom" style="background-color: #b3b3b3!important"></div>
 									<h3>Pacote Axi</h3>

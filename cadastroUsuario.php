@@ -5,9 +5,9 @@
 	<div class="contact">
 		<div class="container">
 			<div class="col-md-12 ab-text w3-agileits">
-			<h2 class="agileits-title">Agende o seu laser <strong>GRÁTIS</strong></h2>
+			<h2 class="agileits-title" style="color: #666666 !important">Agende o seu laser <strong>GRÁTIS</strong></h2>
 			<?php include_once "php/conexao.php"; ?>
-			<h3  style="text-align: center;">Escolha uma data e horário de sua<strong> preferência</strong></h3>
+			<h3  style="text-align: center; color: #666666 !important;">Escolha uma data e horário de sua<strong> preferência</strong></h3>
 			<br> 
 			</div>
 				<div class="agileits_mail_grid_right1 agile_mail_grid_right1" id="formAgendar">

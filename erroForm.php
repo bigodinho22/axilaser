@@ -21,28 +21,28 @@
 					$cancerVitiligo=$_GET["cv"];
 					$pelo=$_GET["pelo"];
 					if($fototipo=="VI"){
-						echo "<p style='color: black !important'>Não é possível realizar a depilação a laser com o seu fototipo.</p>";
+						echo "<h4 style='color: black !important'>Não é possível realizar a depilação a laser com o seu fototipo.</h4><br>";
 					}
 					if($corPelo==1){
-						echo "<p style='color: black !important'>Não é possível realizar a depilação a laser com a coloração dos seus pelos, eles devem ser castanhos ou pretos. </p>";
+						echo "<h4 style='color: black !important; text-align:center'>Não é possível realizar a depilação a laser com a coloração dos seus pelos, eles devem ser castanhos ou pretos. </h4><br>";
 					}
 					if($roacutan==1){
-						echo "<p style='color: black !important'>Não é possível realizar a depilação a laser se você está tomando Roacutan.</p>";
+						echo "<h4 style='color: black !important; text-align:center'>Não é possível realizar a depilação a laser se você está tomando Roacutan.</h4><br>";
 					}
 					if($roacutan==2){
-						echo "<p style='color: black !important'>Se você já utilizou Roacutan, é necesário realizar uma avaliação presencial. <strong>Entre em contato utilizando as informações do rodapé da página para agendar a avaliação.</strong></p>";
+						echo "<h4 style='color: black !important; text-align:center'>Se você já utilizou Roacutan, é necesário realizar uma avaliação presencial. <strong>Entre em contato utilizando as informações do rodapé da página para agendar a avaliação.</strong></h4><br>";
 					}
 					if($cancerVitiligo==1){
-						echo "<p style='color: black !important'>Se você esta diagnosticado com câncer ou vitiligo, não é possível realizar a depilação a laser.</p>";
+						echo "<h4 style='color: black !important; text-align:center'>Se você esta diagnosticado com câncer ou vitiligo, não é possível realizar a depilação a laser.</h4><br>";
 					}
 					if($cancerVitiligo==2){
-						echo "<p style='color: black !important'>Se você já teve câncer, é necessário realizar uma avaliação presencial. <strong>Entre em contato utilizando as informações do rodapé da página para agendar a avaliação.</strong></p>";
+						echo "<h4 style='color: black !important; text-align:center'>Se você já teve câncer, é necessário realizar uma avaliação presencial. <strong>Entre em contato utilizando as informações do rodapé da página para agendar a avaliação.</strong></h4><br>";
 					}
 					if($pelo==1){
-						echo "<p style='color: black !important'>Como o pelo da região que você deseja fazer a depilação a laser é fino, é necessário realizar uma avaliação presencial. <strong>Entre em contato utilizando as informações do rodapé da página para agendar a avaliação.</strong></p>";
+						echo "<h4 style='color: black !important; text-align:center'>Como o pelo da região que você deseja fazer a depilação a laser é fino, é necessário realizar uma avaliação presencial. <strong>Entre em contato utilizando as informações do rodapé da página para agendar a avaliação.</strong></h4><br>";
 					}
 				}else{
-					echo "<p style='color: black !important; text-align: center;'>Não podemos seguir com o seu agendamento, pois o laser grátis é uma sessão de experiência que proporcionamos para quem nunca fez depilação a laser antes.<br><strong>Clique no botão abaixo para conhecer nossos programas.</strong></p><br><br><br>
+					echo "<h4 style='color: black !important; text-align: center;'>Não podemos seguir com o seu agendamento, pois o laser grátis é uma sessão de experiência que proporcionamos para quem nunca fez depilação a laser antes.<br><strong>Clique no botão abaixo para conhecer nossos programas.</strong></h4><br><br><br>
 
 						<a href='programas.php' class='bnrw3-agiletext' id='btnErroLaser' >Nossos Programas</a>";
 				}

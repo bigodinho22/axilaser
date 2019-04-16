@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <?php
 	include 'php/validarLoginAdmin.php';
 ?>
-<?php
+<?php 
 		if(isset($_GET["id_agenda"]) & isset($_GET["alteracao"])){
 		require "php/Conexao.php";
 		$id_agenda=$_GET["id_agenda"];
@@ -29,7 +29,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     	if($resultadoUpdate){
     		echo "<script>
 			alert('".$nome." teve seu estado de comparecimento alterado');
-			window.location.href='indexAdmin.php';
+			window.location.href='resultadoPesquisa.php';
 			</script>";
     	}
 	}
@@ -42,11 +42,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <meta name="keywords" content="Fit&Spa Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<script>
-    function checkBox(i,j){
-        window.location.href='resultadoPesquisa.php?id_agenda='+i+'&alteracao='+j;
-    }
-</script>
 <!-- Custom Theme files -->
 <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
 <link href="css/style.css" type="text/css" rel="stylesheet" media="all"> 
@@ -57,12 +52,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- //Custom Theme files -->
 <!-- js -->
 <script src="js/jquery-2.2.3.min.js"></script> 
-<script src="js/jquery.vide.min.js"></script>
 <!-- //js -->
 <!-- web-fonts -->
 <link href='//fonts.googleapis.com/css?family=Text+Me+One' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 <!-- //web-fonts --> 
 <link rel="stylesheet" type="text/css" href="css/login.css">
 </head> 
@@ -101,32 +97,40 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<br>
 	<div class="agenda">
 		<div class="container">
-			<h1 style= "text-align: center;" >Agenda</h1>
+			<h1 style= "text-align: center;" >Clientes cadastrados no sistema</h1>
 			<br>
 			<br>
-			<form action="resultadoPesquisa.php" method="post">
-				<div class="inputPesquisa">
-					<input type="text" class="searchBar" name="nomePesquisa" placeholder="Digite um nome para pesquisar" />
-					<input type="submit" class="btnSearchBar" value="Pesquisar"/>
-				</div>
-			</form>
 			<table style="color: black; width: 100%;">
 				<tr>
 					<th style= "text-align: center; 
                             border: 1px solid black;">Cliente</th>
 					<th  style= "text-align: center; 
-                            border: 1px solid black;">Data</th>
+                            border: 1px solid black;">Email</th>
 					<th style= "text-align: center; 
-                            border: 1px solid black;">Horário</th>
-					<th style= "text-align: center; 
-                            border: 1px solid black;">Região</th>
-					<th style= "text-align: center; 
-                            border: 1px solid black;">Compareceu?</th>
+                            border: 1px solid black;">Telefone</th>
 				</tr>
 				<?php
-					include_once 'php/mostrarAgenda.php';
+					include_once 'php/mostrarClientesCadastrados.php';
 				?>
 			</table>
+			<h1 style= "text-align: center; margin-top: 4%;" >Clientes que preencheram o formulário de avaliação apenas</h1>
+			<br>
+			<br>
+			<table style="color: black; width: 100%;">
+				<tr>
+					<th style= "text-align: center; 
+                            border: 1px solid black;">Cliente</th>
+					<th  style= "text-align: center; 
+                            border: 1px solid black;">Email</th>
+					<th style= "text-align: center; 
+                            border: 1px solid black;">Telefone</th>
+				</tr>
+				<?php
+					include_once 'php/mostrarClientesNaoCadastrados.php';
+				?>	
+			</table>
+			<div style="display:flex;justify-content: center;margin-top: 2%;"> 
+			<input type="button" onclick="window.location.href='cadastroSessaoAdmin.php'" value="Voltar" />
 		</div>
 	</div>
 	<?php

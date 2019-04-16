@@ -5,6 +5,9 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
+<?php
+	include 'php/validarLoginAdmin.php';
+?>
 <?php 
 		if(isset($_GET["id_agenda"]) & isset($_GET["alteracao"])){
 		require "php/Conexao.php";
@@ -75,6 +78,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<!-- navbar-header -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
 							<ul class="nav navbar-nav navbar-right">
+								<li><a href="clientesLista.php">Listar clientes</a></li>
 								<li><a href="cadastroSessaoAdmin.php">Cadastrar Sessão</a></li>
 								<li><a href="indexAdmin.php">Agenda</a></li>
 								<li><a href="php/sair.php"><i class="glyphicon glyphicon-log-out"></i>  Sair</a></li>
@@ -112,6 +116,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					include_once 'php/mostrarAgenda.php';
 				?>	
 			</table>
+			<div style="display:flex;justify-content: center;margin-top: 2%;"> 
+			<input type="button" onclick="window.location.href='cadastroSessaoAdmin.php'" value="Voltar" />
 		</div>
 	</div>
 	<?php

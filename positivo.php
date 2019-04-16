@@ -7,14 +7,14 @@
 			<!-- about-section2 -->
 			<!-- //about-section2 -->
 			<div class="TitleErro">
-				<h3 class="agileits-title sub-titleErro"><?php echo $_GET["nome"]?>, VOCÊ PODE FAZER DEPILAÇÃO A LASER!</h3>
+				<h3 class="agileits-title sub-titleErro" style="color: #666666 !important"><?php echo $_GET["nome"]?>, VOCÊ PODE FAZER DEPILAÇÃO A LASER!</h3>
 				<div style="text-align: center">
-					<h4>Alguma vez você já fez uma sessão?</h4>
-					<a href="programas.php">Conhecer nossos programas!</a>
+					<br />
+					<h4 style="color: black !important">Nunca fez e está curioso para fazer?</h4>
 					<br />
 					<br />
-					<h4>Nunca fez e está curioso para fazer?</h4>
-					<a href="cadastro.php">Agendar laser grátis!</a>
+					<br />
+					<a href="cadastro.php" class="bnrw3-agiletext" style="border-radius: 50px;">Agendar laser grátis!</a>
 				</div>
 			</div>
 		</div>

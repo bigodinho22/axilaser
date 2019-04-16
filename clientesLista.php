@@ -94,7 +94,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<br>
 	<div class="agenda">
 		<div class="container">
-			<h1 style= "text-align: center;" >Resultado da pesquisa por: <?php echo $_POST["nomePesquisa"]?></h1>
+			<h1 style= "text-align: center;" >Clientes cadastrados no sistema</h1>
 			<br>
 			<br>
 			<table style="color: black; width: 100%;">
@@ -102,16 +102,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<th style= "text-align: center; 
                             border: 1px solid black;">Cliente</th>
 					<th  style= "text-align: center; 
-                            border: 1px solid black;">Data</th>
+                            border: 1px solid black;">Email</th>
 					<th style= "text-align: center; 
-                            border: 1px solid black;">Horário</th>
-					<th style= "text-align: center; 
-                            border: 1px solid black;">Região</th>
-					<th style= "text-align: center; 
-                            border: 1px solid black;">Compareceu?</th>
+                            border: 1px solid black;">Telefone</th>
 				</tr>
 				<?php
-					include_once 'php/mostrarAgenda.php';
+					include_once 'php/mostrarClientesCadastrados.php';
+				?>
+			</table>
+			<h1 style= "text-align: center; margin-top: 4%;" >Clientes que preencheram o formulário de avaliação apenas</h1>
+			<br>
+			<br>
+			<table style="color: black; width: 100%;">
+				<tr>
+					<th style= "text-align: center; 
+                            border: 1px solid black;">Cliente</th>
+					<th  style= "text-align: center; 
+                            border: 1px solid black;">Email</th>
+					<th style= "text-align: center; 
+                            border: 1px solid black;">Telefone</th>
+				</tr>
+				<?php
+					include_once 'php/mostrarClientesNaoCadastrados.php';
 				?>	
 			</table>
 			<div style="display:flex;justify-content: center;margin-top: 2%;"> 

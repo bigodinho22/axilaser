@@ -81,6 +81,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<!-- navbar-header -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
 							<ul class="nav navbar-nav navbar-right">
+								<li><a href="clientesLista.php">Listar clientes</a></li>
 								<li><a href="cadastroSessaoAdmin.php">Cadastrar Sessão</a></li>
 								<li><a href="indexAdmin.php">Agenda</a></li>
 								<li><a href="php/sair.php"><i class="glyphicon glyphicon-log-out"></i>  Sair</a></li>

@@ -41,6 +41,10 @@
 					if($pelo==1){
 						echo "<h4 style='color: black !important;'>Como o pelo da região que você deseja fazer a depilação a laser é fino, é necessário realizar uma avaliação presencial. <strong>Entre em contato utilizando as informações no rodapé da página para agendar a avaliação.</strong></h4><br>";
 					}
+					if($pelo==4){
+						echo "<h4 style='color: black !important;'>Como o pelo da região que você deseja fazer a depilação a laser é muito fino, é necessário realizar uma avaliação presencial. <strong>Entre em contato utilizando as informações no rodapé da página para agendar a avaliação.</strong></h4><br>";
+					}
+
 				}else{
 					echo "<h4 style='color: black !important;'>Não podemos seguir com o seu agendamento, pois o laser grátis é uma sessão de experiência que proporcionamos para quem nunca fez depilação a laser antes.<strong> Clique no botão abaixo para conhecer nossos programas.</strong></h4><br><br><br>
 

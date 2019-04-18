@@ -98,6 +98,7 @@
 						<span>
 							<i>Qual a espessura do pelo na região que você deseja fazer a sessão?</i>
 							<select style="width: 100%;" name="pelo">
+								<option value=4>Muito Fino</option>
 								<option value=1>Fino</option>
 								<option value=2>Médio</option>
 								<option value=3>Grosso</option>

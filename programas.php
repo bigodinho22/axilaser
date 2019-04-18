@@ -16,14 +16,14 @@
 								<div class="abt-block">
 									<div class="serv_abs serv_bottom" style="background-color: #00bcc5 !important"></div>
 									<h3>Pacote Clear</h3>
-									<p>Possui a <strong>liberdade</strong> de escolha na quantidade de sessões que o cliente deseja, ou seja, o cliente escolhe se deseja fazer 03, 05 ou 10 sessões, <strong>sem mudar o valor do tratamento</strong>.</p>
+									<p>Possui a <strong>liberdade de escolha na quantidade de sessões</strong> que o cliente deseja, ou seja, o cliente escolhe se deseja fazer 03, 05 ou 10 sessões, <strong>sem mudar o valor do tratamento</strong>.</p>
 								</div>
 							</div>
 							<div class="col-lg-4 my-lg-0 my-md-5 programas">
 								<div class="abt-block">
 									<div class="serv_abs serv_bottom" style="background-color: #7b1887 !important"></div>
-									<h3>Pacote Confort</h3>
-									<p>Texto</p>
+									<h3>Pacote Comfort</h3>
+									<p>Pacote especial, aonde o cliente tem a possibilidade de fazer depilação a laser nas <strong>regiões mais procuradas como Axilas, Virilha Completa e Ânus ou Buço, por um valor fixo</strong>.</p>
 								</div>
 							</div>
 							<div class="col-lg-4 my-lg-0 my-md-5">
@@ -46,14 +46,14 @@
 									<div class="abt-block mt-sm-0">
 										<div class="serv_abs  serv_bottom" style="background-color: black !important"></div>
 										<h3>Sessão Avulsa</h3>
-										<p>Texto</p>
+										<p>O cliente tem a possibilidade de fazer a <strong>sessão na região que desejar, sem precisar fechar qualquer um de nossos pacotes</strong>.</p>
 									</div>
 								</div>
 								<div class="col-lg-6 mt-lg-0 mt-md-5">
 									<div class="abt-block">
 										<div class="serv_abs  serv_bottom" style="background-color: black !important"></div>
 										<h3>Pacote 10 Sessões</h3>
-										<p>Texto</p>
+										<p>Se trata do pacote mais tradicional, ou seja, o cliente fecha <strong>10 sessões da região que desejar, sem fazer parte do nosso programa de desconto Clube Axi</strong>.</p>
 									</div>
 								</div>
 							</div>

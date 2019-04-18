@@ -11,7 +11,7 @@
 	$queryInserirUsuario ="INSERT INTO clientesformulario VALUES (NULL, '$nome', '$email', '$telefone');";
 
 	$resultado9=$conexao->query($queryInserirUsuario);
-	if(($fototipo!="VI")&($corPelo==2)&($roacutan==3)&($cancerVitiligo==3)&$pelo!=1){
+	if(($fototipo!="VI")&($corPelo==2)&($roacutan==3)&($cancerVitiligo==3)&($pelo!=1)&($pelo!=4)){
 		echo "<script>
 			window.location.href='../positivo.php?nome=$nome';
 		</script>";

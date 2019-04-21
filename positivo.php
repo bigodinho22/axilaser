@@ -7,7 +7,7 @@
 			<!-- about-section2 -->
 			<!-- //about-section2 -->
 			<div class="TitleErro">
-				<h3 class="agileits-title sub-titleErro" style="color: #666666 !important"><?php echo $_GET["nome"]?>, VOCÊ PODE FAZER DEPILAÇÃO A LASER!</h3>
+				<h3 class="agileits-title sub-titleErro" style="color: #666666 !important">parabéns <?php echo $_GET["nome"]?>, VOCÊ PODE FAZER DEPILAÇÃO A LASER!</h3>
 				<div style="text-align: center">
 					<br />
 					<h4 style="color: black !important">Nunca fez e está curioso para fazer?</h4>

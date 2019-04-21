@@ -196,6 +196,7 @@
 
 .agileits_mail_grid_right1 span i{
 	text-transform: none !important;
+	font-style: none !important;
 }
 
 #lugDepFem{
@@ -390,7 +391,7 @@ div#loginn{
 }
 
 #titleAxiBlack{
-	background-color: #666666 !important;
+	background-color: black !important;
 }
 
 #sessoes{

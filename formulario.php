@@ -15,6 +15,10 @@
 							<input type="text" name="nomeForm" placeholder=" " required="">
 						</span>
 						<span>
+							<i>Idade</i>
+							<input type="text" name="idadeForm">
+						</span>
+						<span>
 							<i>Email</i>
 							<input type="email" name="emailForm" placeholder=" " required="">
 						</span>

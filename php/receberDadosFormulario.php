@@ -9,16 +9,28 @@
 	$roacutan=$_POST["roacutan"]; // 3: nao, 4: exame, 5: boa
 	$cancerVitiligo=$_POST["cancerVitiligo"]; // 6: nao, 7: exame, 8: boa
 	$pelo=$_POST["pelo"];
-	$queryInserirUsuario ="INSERT INTO clientesformulario VALUES (NULL, '$nome', $idade, '$email', '$telefone');";
 
-	$resultado9=$conexao->query($queryInserirUsuario);
-	if(($fototipo!="VI")&($corPelo==2)&($roacutan==3)&($cancerVitiligo==3)&($pelo!=1)&($pelo!=4)){
-		echo "<script>
-			window.location.href='../positivo.php?nome=$nome';
-		</script>";
+	$queryVerificaEmail = "SELECT email FROM clientesformulario WHERE email = '$email'";  
+
+	$resultado8 = $conexao->query($queryVerificaEmail);
+
+	if($resultado8->num_rows>0){
+
+		echo "<script language='javascript' type='text/javascript'> alert('Esse e-mail já realizou uma pré-avaliação!'); window.location.href='../formulario.php';</script>";
+
 	}else{
-		echo "<script language='javascript' type='text/javascript'>
-			window.location.href='../erroForm.php?fototipo=$fototipo&corPelo=$corPelo&roacutan=$roacutan&cv=$cancerVitiligo&pelo=$pelo';
-		</script>";
+		$queryInserirUsuario ="INSERT INTO clientesformulario VALUES (NULL, '$nome', $idade, '$email', '$telefone');";
+
+		$resultado9=$conexao->query($queryInserirUsuario);
+		if(($fototipo!="VI")&($corPelo==2)&($roacutan==3)&($cancerVitiligo==3)&($pelo!=1)&($pelo!=4)){
+			echo "<script>
+				window.location.href='../positivo.php?nome=$nome';
+			</script>";
+		}else{
+			echo "<script language='javascript' type='text/javascript'>
+				window.location.href='../erroForm.php?fototipo=$fototipo&corPelo=$corPelo&roacutan=$roacutan&cv=$cancerVitiligo&pelo=$pelo';
+			</script>";
+		}
 	}
+	
 ?>

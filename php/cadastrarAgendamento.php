@@ -7,6 +7,7 @@
 	$verificaSenhaUsuario=md5($_POST["verificaSenhaUsuario"]);
 	
 	$nomeUsuario=$_SESSION["nomeUsuario"];
+	$idadeUsuario=$_SESSION["idadeUsuario"];
 	$emailUsuario=$_SESSION["emailUsuario"];
 	$telefoneUsuario=$_SESSION["telefoneUsuario"];
 
@@ -15,7 +16,7 @@
 		echo "<script language='javascript' type='text/javascript'> alert('Insira um horário válido'); window.location.href='../cadastroUsuario.php?';</script>";
 	}
 	if($senhaUsuario == $verificaSenhaUsuario){
-		$queryInserirUsuario ="INSERT INTO cliente VALUES (NULL, '$nomeUsuario', '$emailUsuario', '$telefoneUsuario', '$senhaUsuario');";
+		$queryInserirUsuario ="INSERT INTO cliente VALUES (NULL, '$nomeUsuario', $idadeUsuario, '$emailUsuario', '$telefoneUsuario', '$senhaUsuario');";
 
 		$resultado9=$conexao->query($queryInserirUsuario);	
 

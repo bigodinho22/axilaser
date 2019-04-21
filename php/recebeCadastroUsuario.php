@@ -2,6 +2,7 @@
 	session_start();
 
 	$nomeUsuario=$_POST["nomeUsuario"];
+	$idadeUsuario=$_POST["idadeUsuario"];
 	$emailUsuario=$_POST["emailUsuario"];
 	$telefoneUsuario=$_POST["telefoneUsuario"];
 	$laser = $_POST["laser"];
@@ -24,6 +25,7 @@
 
 		}else{
 			$_SESSION["nomeUsuario"] = $nomeUsuario;
+			$_SESSION["idadeUsuario"] = $idadeUsuario;
 			$_SESSION["emailUsuario"] = $emailUsuario;
 			$_SESSION["telefoneUsuario"] = $telefoneUsuario;
 

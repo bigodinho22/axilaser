@@ -11,23 +11,23 @@
 					<form action="php/recebeCadastroUsuario.php" method="post">
 						<span>
 							<i>Nome</i>
-							<input type="text" name="nomeUsuario" placeholder=" " required="">
+							<input type="text" name="nomeUsuario" required>
 						</span>
 						<span>
 							<i>Idade</i>
-							<input type="text" name="idadeUsuario">
+							<input type="text" name="idadeUsuario" required maxlength="2" size="2" >
 						</span>
 						<span>
 							<i>Email</i>
-							<input type="email" name="emailUsuario" placeholder=" " required="">
+							<input type="email" name="emailUsuario" required>
 						</span>
 						<span>
 							<i>Telefone</i>
-							<input type="tel" name="telefoneUsuario" placeholder=" " required="">
+							<input type="tel" name="telefoneUsuario" required>
 						</span>
 						<span>
 							<i>Você já realizou a depilação a laser alguma vez?</i>
-							<select name="laser" style="width: 100%;">
+							<select name="laser" style="width: 100%;" required>
 								<option>Sim</option>
 								<option>Não</option>
 							</select>

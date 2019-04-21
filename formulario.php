@@ -12,26 +12,26 @@
 					<form action="php/receberDadosFormulario.php" method="post">
 						<span>
 							<i>Nome</i>
-							<input type="text" name="nomeForm" placeholder=" " required="">
+							<input type="text" name="nomeForm" required>
 						</span>
 						<span>
 							<i>Idade</i>
-							<input type="text" name="idadeForm">
+							<input type="text" name="idadeForm" required maxlength="2" size="2" >
 						</span>
 						<span>
 							<i>Email</i>
-							<input type="email" name="emailForm" placeholder=" " required="">
+							<input type="email" name="emailForm" required>
 						</span>
 						<span>
 							<i>Telefone</i>
-							<input type="tel" name="telefoneForm" placeholder=" " required="">
+							<input type="tel" name="telefoneForm" required>
 						</span>
 						<hr style="border-color: #7b1887">
 						<span>
 							<i>Qual o seu fototipo?</i>
 							<div class="formFlex">
 								<div class="col-md-6 ab-text three w3-agileits">
-									<input type="radio" name="fototipo" value="I" id="I"> I
+									<input type="radio" name="fototipo" value="I" id="I" checked > I
 									<label for="I">
 										<img src="images/fototipoI.jpg" style="width: 50%;">
 									</label>

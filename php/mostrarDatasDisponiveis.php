@@ -1,8 +1,9 @@
 <?php
     include "conexao.php";
 
-    $query = "select id_data,DATE_FORMAT(data, '%d/%m/%Y') as data from datas ORDER BY data ASC";
-    
+    $query = "select *,DATE_FORMAT(data, '%d/%m/%Y') as data from datas ORDER BY  SUBSTR(data, 7, 4), 
+      SUBSTR(data, 4, 2), SUBSTR(data, 1, 2)";
+
     $resultado = $conexao->query($query);
 
     if($resultado->num_rows>0){

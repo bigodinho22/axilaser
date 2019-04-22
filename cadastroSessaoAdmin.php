@@ -124,6 +124,32 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 		</div>
 	</div>
+	<script>
+
+	$(function() {
+		var diasSemana = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ];
+		var diasFinalSemana = [ "Sunday"];
+
+		$("#datepicker").multiDatesPicker({
+			dayNames: [ "Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado" ], 
+			dayNamesMin: [ "D","S","T","Q","Q","S","S" ], 
+			dayNamesShort: ["Dom","Seg","Ter","Qua","Qui","Sex","Sáb","Dom"],
+		    monthNames: ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"],
+		    monthNamesShort: ["Jan","Fev","Mar",'Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'],
+		    nextText: "Próximo",
+		    prevText: "Anterior", 
+		 	minDate:0, 
+			maxDate:"+1M", 
+			dateFormat: "dd/mm/yy", 
+			beforeShowDay: function(data){        
+		        var diaSemana = diasSemana[data.getDay()];
+		        var isDataFinalSemana = diasFinalSemana.indexOf(diaSemana) != -1;
+		        return [!isDataFinalSemana];
+		    }
+    	});
+
+	});
+	</script>
 	<?php
 		require 'footer.php';
 	?>

@@ -51,6 +51,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<h1 style= "text-align: center;" >Clientes cadastrados no sistema</h1>
 			<br>
 			<br>
+			<form action="resultadoPesquisaCliente.php" method="post">
+				<div class="inputPesquisa">
+					<input type="text" class="searchBar" name="nomePesquisaC" placeholder="Digite um nome para pesquisar" />
+					<input type="submit" class="btnSearchBar" value="Pesquisar"/>
+				</div>
+			</form>
 			<table style="color: black; width: 100%;">
 				<tr>
 					<th style= "text-align: center; 
@@ -58,6 +64,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<th  style= "text-align: center; 
                             border: 1px solid black;">Email</th>
 					<th style= "text-align: center; 
+                            border: 1px solid black;">Idade</th>
+                    <th style= "text-align: center; 
                             border: 1px solid black;">Telefone</th>
 				</tr>
 				<?php
@@ -67,15 +75,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<h1 style= "text-align: center; margin-top: 4%;" >Clientes que preencheram o formulário de avaliação apenas</h1>
 			<br>
 			<br>
+			<form action="resultadoPesquisaCliente.php" method="post">
+				<div class="inputPesquisa">
+					<input type="text" class="searchBar" name="nomePesquisaNC" placeholder="Digite um nome para pesquisar" />
+					<input type="submit" class="btnSearchBar" value="Pesquisar"/>
+				</div>
+			</form>
 			<table style="color: black; width: 100%;">
 				<tr>
 					<th style= "text-align: center; 
                             border: 1px solid black;">Cliente</th>
 					<th  style= "text-align: center; 
                             border: 1px solid black;">Email</th>
+                    <th style= "text-align: center; 
+                            border: 1px solid black;">Idade</th>
 					<th style= "text-align: center; 
                             border: 1px solid black;">Telefone</th>
-                     <th style= "text-align: center; 
+                    <th style= "text-align: center; 
                             border: 1px solid black;">Situação</th>
 				</tr>
 				<?php

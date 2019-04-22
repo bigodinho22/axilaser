@@ -1,6 +1,28 @@
 <?php 
-    require "conexao.php";
-    $query2 = "select id_cliente_formulario, nome, email, telefone, situacao, idade from clientesformulario order by `nome` asc";
+	require "conexao.php";
+	if(isset($_POST["nomePesquisaC"])){
+		$query = "select nome, email, telefone, idade from cliente where nome like '%".$_POST["nomePesquisaC"]."%' order by `nome` asc";
+            
+    $resultado = $conexao->query($query);
+
+    if($resultado->num_rows>0){ 
+        while($registro = $resultado->fetch_assoc()){
+            echo 
+            "<tr>
+                <td style= 'text-align: center; 
+                        border: 1px solid black;'>".$registro["nome"]."</td>
+                <td style= 'text-align: center; 
+                        border: 1px solid black;'>".$registro["email"]."</td>
+                <td style= 'text-align: center; 
+                        border: 1px solid black;'>".$registro["idade"]."</td>
+                <td style= 'text-align: center; 
+                        border: 1px solid black;'>".$registro["telefone"]."</td>
+            </tr>";
+        };
+    }
+	}
+	if(isset($_POST["nomePesquisaNC"])){
+    $query2 = "select id_cliente_formulario, nome, email, telefone, situacao, idade from clientesformulario where nome like '%".$_POST["nomePesquisaNC"]."%' order by `nome` asc";
             
     $resultado2 = $conexao->query($query2);
     $situacao= "";
@@ -38,4 +60,5 @@
             $situacao="";
         };
     }
+	}
 ?>

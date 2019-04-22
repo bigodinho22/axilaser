@@ -34,6 +34,59 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	     		$situacao = $registro["situacao"];
 	        }
 	    }
+
+	    if($roacutan==1){
+	    	$roacutan = "Está fazendo tratamento com Roacutan.";
+	    }
+
+	    if($roacutan == 2){
+	    	$roacutan = "Já fez o tratamento com Roacutan.";
+	    }
+
+	    if($roacutan == 3){
+	    	$roacutan = "Não está fazendo tratamento com Roacutan.";
+	    }
+
+	    if($cancerVitiligo == 1){
+	    	$cancerVitiligo = "Possui Câncer e/ou Vitiligo.";
+	    }
+
+	    if($cancerVitiligo == 2){
+	    	$cancerVitiligo = "Já teve Câncer.";
+	    }
+
+	    if($cancerVitiligo == 3){
+	    	$cancerVitiligo = "Não possui Câncer e/ou Vitiligo.";
+	    }
+
+	    if($pelo == 1){
+	    	$pelo = "Pelo fino.";
+	    }
+
+	    if($pelo == 2){
+	    	$pelo = "Pelo médio.";
+	    }
+
+	    if($pelo == 3){
+	    	$pelo = "Pelo grosso.";
+	    }
+
+	    if($pelo == 4){
+	    	$pelo = "Pelo muito fino.";
+	    }
+
+	    if($situacao==1){
+            $situacao="Apto";
+        }
+
+        if($situacao==2){
+            $situacao="Avaliação";
+        }
+        
+        if($situacao==3){
+            $situacao="Não-apto";
+        }
+
 	}else{
     	echo "<script>alert(Nenhum cliente escolhido!); window.location.href='clientesLista.php';</script>";
     }

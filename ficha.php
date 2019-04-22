@@ -35,6 +35,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	        }
 	    }
 
+	    if($corPelo == 1){
+	    	$corPelo = "Loiro";
+	    }
+
+	    if($corPelo == 2){
+	    	$corPelo = "Ruivo";
+	    }
+
+	    if($corPelo == 3){
+	    	$corPelo = "Preto";
+	    }
+
+	    if($corPelo == 4){
+	    	$corPelo = "Castanho";
+	    }
+
+	    if($corPelo == 5){
+	    	$corPelo = "Branco";
+	    }
+
 	    if($roacutan==1){
 	    	$roacutan = "Está fazendo tratamento com Roacutan.";
 	    }

@@ -22,7 +22,7 @@
 							<input type="email" name="emailUsuario" required>
 						</span>
 						<span>
-							<i>Telefone</i>
+							<i>Telefone </i>
 							<input type="tel" name="telefoneUsuario" required>
 						</span>
 						<span>

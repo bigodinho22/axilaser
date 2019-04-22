@@ -15,7 +15,7 @@
 							<div class="col-lg-4 my-lg-0 my-md-5 programas">
 								<div class="abt-block">
 									<div class="serv_abs serv_bottom" style="background-color: #00bcc5 !important"></div>
-									<h3>Pacote Clean</h3>
+									<h3>Pacote Clean </h3>
 									<p>Possui a <strong>liberdade de escolha na quantidade de sessões</strong> que o cliente deseja, ou seja, o cliente escolhe se deseja fazer 03, 05 ou 10 sessões, <strong>sem mudar o valor do tratamento</strong>.</p>
 								</div>
 							</div>

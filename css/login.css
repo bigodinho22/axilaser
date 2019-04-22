@@ -534,6 +534,35 @@ h1, h2, h3, h4, h5, h6{
 	text-transform: uppercase;
 }
 
+.botaoVoltarFicha {
+    outline: none;
+    background: #7b1887;
+    color: #fff;
+    padding: .8em 3em;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: none;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	-o-transition:.5s all;
+	-ms-transition:.5s all;
+	transition:.5s all;
+}
+
+.botaoVoltarFicha:hover{
+    background:#212121;
+    color: #fff;
+}
+
+
+@media(max-width:414px){
+	.botaoVoltarFicha{ 
+	    padding: .8em 2em;
+	    font-size: 0.9em; 
+}
+
 @media (max-width: 1199px){
 	.programas{
 		margin-bottom: 10%;

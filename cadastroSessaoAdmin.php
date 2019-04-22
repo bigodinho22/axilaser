@@ -100,7 +100,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<input type="submit" value="Adicionar Datas">
 						</div>
 					</form>
-					<div class="tabelaAdminDiv">
+				</div>
+				<div class="tabelaAdminDiv">
 						<table class="tabelaAdmin">
 							<tr>
 								<th style= "text-align: center; 
@@ -121,7 +122,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							?>
 						</table>
 					</div>
-				</div>
 		</div>
 	</div>
 	<?php

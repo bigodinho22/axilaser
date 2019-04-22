@@ -15,7 +15,7 @@
 					$cancerVitiligo=$_GET["cv"];
 					$pelo=$_GET["pelo"];
 
-					if($roacutan!=1  $cancerVitiligo!=1){
+					if($roacutan!=1 && $cancerVitiligo!=1){
 
 						echo "COM BASE EM SUAS INFORMAÇÕES,";
 
@@ -45,11 +45,11 @@
 						echo "Infelizmente você não pode realizar as sessões pelos devidos motivos:";
 					
 						if($roacutan==1){
-							echo "<h4 style='color: black !important; '>Não é possível realizar a depilação a laser se você está tomando Roacutan.<strong> Qualquer dúvida estamos a disposição</strong>.</h4><br>";
+							echo "<h4 style='color: black !important; text-align:center'>Não é possível realizar a depilação a laser se você está tomando Roacutan.<strong> Qualquer dúvida estamos a disposição</strong>.</h4><br>";
 						}
 
 						if($cancerVitiligo==1){
-							echo "<h4 style='color: black !important; '>Se você esta diagnosticado com câncer ou vitiligo, não é possível realizar a depilação a laser.<strong> Qualquer dúvida estamos a disposição</strong>.</h4><br>";
+							echo "<h4 style='color: black !important; text-align:center'>Se você esta diagnosticado com câncer ou vitiligo, não é possível realizar a depilação a laser.<strong> Qualquer dúvida estamos a disposição</strong>.</h4><br>";
 						}
 					}
 

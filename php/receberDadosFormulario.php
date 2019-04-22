@@ -19,7 +19,7 @@
 		echo "<script language='javascript' type='text/javascript'> alert('Esse e-mail já realizou uma pré-avaliação!'); window.location.href='../formulario.php';</script>";
 
 	}else{
-		$queryInserirUsuario ="INSERT INTO clientesformulario VALUES (NULL, '$nome', $idade, '$email', '$telefone');";
+		$queryInserirUsuario ="INSERT INTO clientesformulario VALUES (NULL, '$nome', $idade, '$email', '$telefone', '$fototipo', '$corPelo', '$roacutan', '$cancerVitiligo', '$pelo');";
 
 		$resultado9=$conexao->query($queryInserirUsuario);
 		if(($fototipo!="VI")&($corPelo==2)&($roacutan==3)&($cancerVitiligo==3)&($pelo!=1)&($pelo!=4)){

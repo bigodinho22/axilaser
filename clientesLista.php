@@ -44,6 +44,63 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	function mouseOut(i) {
 	  document.getElementById('opcoesCli'+i).style.display = 'none';
 	}
+	function filtroApto() {
+		var trs =document.getElementsByTagName("tr");
+		    for(var i=0;i<=trs.length;i++) {
+		        if(trs[i].className == "apto") { 
+		            trs[i].style.display = "table-row";            
+		        }
+		        if(trs[i].className == "napto") { 
+		            trs[i].style.display = "none";            
+		        }
+		        if(trs[i].className == "avaliacao") {
+		            trs[i].style.display = "none";            
+		        }
+		    }
+	}
+	function filtroNApto() {
+	  var trs =document.getElementsByTagName("tr"); 
+		    for(var i=0;i<=trs.length;i++) {
+		        if(trs[i].className == "apto") { 
+		            trs[i].style.display = "none";            
+		        }
+		        if(trs[i].className == "napto") { 
+		            trs[i].style.display = "table-row";            
+		        }
+		        if(trs[i].className == "avaliacao") { 
+		            trs[i].style.display = "none";            
+		        }
+		    }
+	}
+	function filtroAvaliacao() {
+	  var trs =document.getElementsByTagName("tr"); 
+		    for(var i=0;i<=trs.length;i++) {
+		        if(trs[i].className == "apto") { 
+		            trs[i].style.display = "none";            
+		        }
+		        if(trs[i].className == "napto") { 
+		            trs[i].style.display = "none";            
+		        }
+		        if(trs[i].className == "avaliacao") {
+		            trs[i].style.display = "table-row";            
+		        }
+		    }
+	}
+	function filtroTodos() {
+	 var trs =document.getElementsByTagName("tr");
+		    for(var i=0;i<=trs.length;i++) {
+		        if(trs[i].className == "apto") {
+		            trs[i].style.display = "table-row";            
+		        }
+		        if(trs[i].className == "napto") { 
+		            trs[i].style.display = "table-row";            
+		        }
+		        if(trs[i].className == "avaliacao") {
+		            trs[i].style.display = "table-row";            
+		        }
+		    }
+	}
+
 </script>
 	<br>
 	<div class="agenda">
@@ -80,6 +137,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<input type="text" class="searchBar" name="nomePesquisaNC" placeholder="Digite um nome para pesquisar" />
 					<input type="submit" class="btnSearchBar" value="Pesquisar"/>
 				</div>
+			</form>
+			<form>
+			  <input type="radio" name="filtro" id="todos" onclick="filtroTodos()" value="todos" checked> <label id="todos" for="todos"> Todos os usuários</label>
+			  <input type="radio" name="filtro" id="aptos" onclick="filtroApto()" value="aptos"> <label id="aptos" for="aptos">Aptos</label>
+			  <input type="radio" name="filtro" id="naptos" onclick="filtroNApto()" value="naptos"> <label id="naptos" for="naptos">Não aptos</label>
+			  <input type="radio" name="filtro" id="avaliacao" onclick="filtroAvaliacao()" value="aval"> <label id="avaliacao" for="avaliacao"> Necessitam de avaliação </label>
 			</form>
 			<table style="color: black; width: 100%;">
 				<tr>

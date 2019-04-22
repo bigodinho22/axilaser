@@ -4,19 +4,23 @@
             
     $resultado2 = $conexao->query($query2);
     $situacao= "";
+    $classe= "";
     if($resultado2->num_rows>0){ 
         while($registro2 = $resultado2->fetch_assoc()){
             if($registro2["situacao"]==1){
                 $situacao="Apto";
+                $classe="apto";
             }
             if($registro2["situacao"]==2){
                 $situacao="Avaliação";
+                $classe="avaliacao";
             }
             if($registro2["situacao"]==3){
                 $situacao="Não-apto";
+                $classe="napto";
             }
             echo 
-            "<tr>
+            "<tr class='".$classe."'>
                 <td style= 'text-align: center; 
                         border: 1px solid black;'>
                         <div class='opcoesDiv' id='opcoesCli".$registro2["id_cliente_formulario"]."' onMouseOver='mouseOver(".$registro2["id_cliente_formulario"].")' onMouseOut='mouseOut(".$registro2["id_cliente_formulario"].")'>
@@ -36,6 +40,7 @@
                         border: 1px solid black;'>".$situacao."</td>
             </tr>";
             $situacao="";
+            $classe="";
         };
     }
 ?>

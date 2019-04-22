@@ -4,8 +4,8 @@
 			<div class="col-md-3 footer-grids" > 
 				<h3>Contate-nos </h3>
 				<p>R. Prof. Luiz Nardy, 140 - Centro, Bragança Paulista<br>
-					<span>Telefone: 011 2277-4659</span>
-					<span>Celular: 011 99665-5197</span>
+					<span>Telefone: 2277-4659</span>
+					<span>Celular: (11) 99665-5197</span>
 					<span><a href="mailto:depilacaoalaser@axilaser.com.br">depilacaoalaser@axilaser.com.br</a></span>
 					<div class="social-wthree-icons bnragile-icons">
 						<ul>

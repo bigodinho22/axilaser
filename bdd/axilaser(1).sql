@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 21-Abr-2019 às 23:59
--- Versão do servidor: 5.7.21
+-- Generation Time: Apr 22, 2019 at 01:11 AM
+-- Server version: 5.7.21
 -- PHP Version: 5.6.35
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `admin`
+-- Table structure for table `admin`
 --
 
 DROP TABLE IF EXISTS `admin`;
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Extraindo dados da tabela `admin`
+-- Dumping data for table `admin`
 --
 
 INSERT INTO `admin` (`login`, `senha`) VALUES
@@ -45,7 +45,7 @@ INSERT INTO `admin` (`login`, `senha`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `agenda`
+-- Table structure for table `agenda`
 --
 
 DROP TABLE IF EXISTS `agenda`;
@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `agenda` (
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 
 --
--- Extraindo dados da tabela `agenda`
+-- Dumping data for table `agenda`
 --
 
 INSERT INTO `agenda` (`id_agenda`, `id_cliente`, `titulo`, `id_horario_data`, `regiao`, `anotacoes`, `compareceu`) VALUES
@@ -74,7 +74,7 @@ INSERT INTO `agenda` (`id_agenda`, `id_cliente`, `titulo`, `id_horario_data`, `r
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `cliente`
+-- Table structure for table `cliente`
 --
 
 DROP TABLE IF EXISTS `cliente`;
@@ -89,7 +89,7 @@ CREATE TABLE IF NOT EXISTS `cliente` (
 ) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=latin1;
 
 --
--- Extraindo dados da tabela `cliente`
+-- Dumping data for table `cliente`
 --
 
 INSERT INTO `cliente` (`id_cliente`, `nome`, `idade`, `email`, `telefone`, `senha`) VALUES
@@ -103,7 +103,7 @@ INSERT INTO `cliente` (`id_cliente`, `nome`, `idade`, `email`, `telefone`, `senh
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `clientesformulario`
+-- Table structure for table `clientesformulario`
 --
 
 DROP TABLE IF EXISTS `clientesformulario`;
@@ -113,26 +113,32 @@ CREATE TABLE IF NOT EXISTS `clientesformulario` (
   `idade` int(2) NOT NULL,
   `email` varchar(120) NOT NULL,
   `telefone` varchar(120) NOT NULL,
+  `fototipo` varchar(3) NOT NULL,
+  `corPelo` varchar(8) NOT NULL,
+  `roacutan` varchar(32) NOT NULL,
+  `cancerVitiligo` varchar(64) NOT NULL,
+  `pelo` varchar(32) NOT NULL,
   PRIMARY KEY (`id_cliente_formulario`)
-) ENGINE=MyISAM AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=30 DEFAULT CHARSET=latin1;
 
 --
--- Extraindo dados da tabela `clientesformulario`
+-- Dumping data for table `clientesformulario`
 --
 
-INSERT INTO `clientesformulario` (`id_cliente_formulario`, `nome`, `idade`, `email`, `telefone`) VALUES
-(2, 'flavio', 0, 'fla@gmail.com', '999999'),
-(26, 'Letícia ', 17, 'lele@gmail.com', '11998075607'),
-(4, 'edilson', 0, 'edilson@gmail.com', '9999999999'),
-(7, 'andre', 0, 'andre@gmailc.om', '020392039'),
-(8, 'zeca', 0, 'zecaurubu@gmail.com', '0909090909'),
-(18, 'Letícia ', 0, 'lemayara16@gmail.com', '11998075607'),
-(19, 'ricardo', 0, 'rr@email.com', '11');
+INSERT INTO `clientesformulario` (`id_cliente_formulario`, `nome`, `idade`, `email`, `telefone`, `fototipo`, `corPelo`, `roacutan`, `cancerVitiligo`, `pelo`) VALUES
+(2, 'flavio', 0, 'fla@gmail.com', '999999', '', '', '', '', ''),
+(4, 'edilson', 0, 'edilson@gmail.com', '9999999999', '', '', '', '', ''),
+(7, 'andre', 0, 'andre@gmailc.om', '020392039', '', '', '', '', ''),
+(8, 'zeca', 0, 'zecaurubu@gmail.com', '0909090909', '', '', '', '', ''),
+(18, 'Letícia ', 0, 'lemayara16@gmail.com', '11998075607', '', '', '', '', ''),
+(19, 'ricardo', 0, 'rr@email.com', '11', '', '', '', '', ''),
+(28, 'Letícia ', 17, 'lele@gmail.com', '11998075607', 'VI', '2', '3', '3', '3'),
+(29, 'Letícia', 17, 'l@gmail.com', '11998075607', 'VI', '2', '3', '3', '3');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `datahora`
+-- Table structure for table `datahora`
 --
 
 DROP TABLE IF EXISTS `datahora`;
@@ -146,7 +152,7 @@ CREATE TABLE IF NOT EXISTS `datahora` (
 ) ENGINE=MyISAM AUTO_INCREMENT=30 DEFAULT CHARSET=latin1;
 
 --
--- Extraindo dados da tabela `datahora`
+-- Dumping data for table `datahora`
 --
 
 INSERT INTO `datahora` (`id_horario_data`, `id_data`, `horario`, `agendada`) VALUES
@@ -161,7 +167,7 @@ INSERT INTO `datahora` (`id_horario_data`, `id_data`, `horario`, `agendada`) VAL
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `datas`
+-- Table structure for table `datas`
 --
 
 DROP TABLE IF EXISTS `datas`;
@@ -172,7 +178,7 @@ CREATE TABLE IF NOT EXISTS `datas` (
 ) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
 
 --
--- Extraindo dados da tabela `datas`
+-- Dumping data for table `datas`
 --
 
 INSERT INTO `datas` (`id_data`, `data`) VALUES

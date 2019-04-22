@@ -138,12 +138,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<input type="submit" class="btnSearchBar" value="Pesquisar"/>
 				</div>
 			</form>
-			<form>
-			  <input type="radio" name="filtro" id="todos" onclick="filtroTodos()" value="todos" checked> <label id="todos" for="todos"> Todos os usuários</label>
-			  <input type="radio" name="filtro" id="aptos" onclick="filtroApto()" value="aptos"> <label id="aptos" for="aptos">Aptos</label>
-			  <input type="radio" name="filtro" id="naptos" onclick="filtroNApto()" value="naptos"> <label id="naptos" for="naptos">Não aptos</label>
-			  <input type="radio" name="filtro" id="avaliacao" onclick="filtroAvaliacao()" value="aval"> <label id="avaliacao" for="avaliacao"> Necessitam de avaliação </label>
+			<form style="border: 1px solid #f5f5f5; background-color: #e6feff">
+				<span style="color: #666666">FILTROS:</span>
+
+					<input type="radio" name="filtro" id="todos" onclick="filtroTodos()" value="todos" checked> <label id="todos" for="todos"> Todos os usuários</label>
+
+					<input type="radio" name="filtro" id="aptos" onclick="filtroApto()" value="aptos"> <label id="aptos" for="aptos">Aptos</label>
+
+					<input type="radio" name="filtro" id="naptos" onclick="filtroNApto()" value="naptos"> <label id="naptos" for="naptos">Não aptos</label>
+
+					<input type="radio" name="filtro" id="avaliacao" onclick="filtroAvaliacao()" value="aval"> <label id="avaliacao" for="avaliacao"> Necessitam de avaliação </label>
 			</form>
+			<br>
 			<table style="color: black; width: 100%;">
 				<tr>
 					<th style= "text-align: center; 

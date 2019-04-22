@@ -66,6 +66,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             border: 1px solid black;">Email</th>
 					<th style= "text-align: center; 
                             border: 1px solid black;">Telefone</th>
+                     <th style= "text-align: center; 
+                            border: 1px solid black;">Situação</th>
 				</tr>
 				<?php
 					include_once 'php/mostrarClientesNaoCadastrados.php';

@@ -28,7 +28,7 @@
 						</span>
 						<hr style="border-color: #7b1887">
 						<span>
-							<i>Qual o seu fototipo?</i>
+							<i>Qual o seu fototipo? (coloração da pele)</i>
 							<div class="formFlex">
 								<div class="col-md-6 ab-text three w3-agileits">
 									<input type="radio" name="fototipo" value="I" id="I" checked > I

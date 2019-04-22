@@ -31,7 +31,7 @@
       $_SESSION["senha"] = $senhaLogin;
       $_SESSION["logado"] = true;
 
-      header('location:../paginaLoginUsuario.php');
+      header('location:../indexUsuario.php');
 
    }else{
       unset ($_SESSION["login"]);

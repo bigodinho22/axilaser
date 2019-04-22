@@ -57,7 +57,7 @@
 					echo "NÃO PODEMOS REALIZAR SUA SESSÃO DE LASER GRÁTIS!";
 					echo "<h4 style='color: black !important;'>Não podemos seguir com o seu agendamento, pois o laser grátis é uma sessão de experiência que proporcionamos para quem nunca fez depilação a laser antes.<strong> Clique no botão abaixo para conhecer nossos programas.</strong></h4><br><br><br>
 
-						<a href='programas.php' class='bnrw3-agiletext' id='btnErroLaser' >Nossos Programas</a>";
+						<a href='nossosProgramas.php' class='bnrw3-agiletext' id='btnErroLaser' >Nossos Programas</a>";
 				}?></h3>
 
 				<br /> 

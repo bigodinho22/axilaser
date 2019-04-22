@@ -15,7 +15,7 @@
 					$cancerVitiligo=$_GET["cv"];
 					$pelo=$_GET["pelo"];
 
-					if($roacutan!=1 && $cancerVitiligo!=1){
+					if($roacutan!=1  $cancerVitiligo!=1){
 
 						echo "COM BASE EM SUAS INFORMAÇÕES,";
 
@@ -40,18 +40,8 @@
 
 						echo "não é/são indicado(s) para o tratamento.";
 
-						echo "<h4 style='text-align: center; color: #7b1887;'><strong>Aconselhamos uma avaliação presencial caso você tenha ficado com alguma dúvida ao preencher o questionário</strong></h4>";
-					}
-
-				}else{
-					echo "NÃO PODEMOS REALIZAR SUA SESSÃO DE LASER GRÁTIS!";
-				}?></h3>
-
-				<br /> 
-
-				<h3 class="agileits-title sub-titleErro" style="color: #666666 !important; font-size: 2.5em !important"><?php if(!isset($_GET["laser"])){
-
-					if($roacutan!=2 && $cancerVitiligo!=2 && $fototipo!="VI" && $corPelo!=1 && $pelo!=1 && $pelo!=4){
+						echo "<h4 style='text-align: center; color: #7b1887; font-size: 23px !important;'><strong>Aconselhamos uma avaliação presencial caso você tenha ficado com alguma dúvida ao preencher o questionário</strong></h4>";
+					}else{
 						echo "Infelizmente você não pode realizar as sessões pelos devidos motivos:";
 					
 						if($roacutan==1){
@@ -62,12 +52,15 @@
 							echo "<h4 style='color: black !important; '>Se você esta diagnosticado com câncer ou vitiligo, não é possível realizar a depilação a laser.<strong> Qualquer dúvida estamos a disposição</strong>.</h4><br>";
 						}
 					}
+
 				}else{
 					echo "NÃO PODEMOS REALIZAR SUA SESSÃO DE LASER GRÁTIS!";
 					echo "<h4 style='color: black !important;'>Não podemos seguir com o seu agendamento, pois o laser grátis é uma sessão de experiência que proporcionamos para quem nunca fez depilação a laser antes.<strong> Clique no botão abaixo para conhecer nossos programas.</strong></h4><br><br><br>
 
 						<a href='programas.php' class='bnrw3-agiletext' id='btnErroLaser' >Nossos Programas</a>";
 				}?></h3>
+
+				<br /> 
 			</div>
 		</div>
 	</div>

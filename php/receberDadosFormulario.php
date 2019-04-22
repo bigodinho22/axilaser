@@ -17,19 +17,22 @@
 	if($resultado8->num_rows>0){
 		echo "<script language='javascript' type='text/javascript'> alert('Esse e-mail já realizou uma pré-avaliação!'); window.location.href='../formulario.php';</script>";
 	}else{
-		if(($fototipo!="VI")&($corPelo==2)&($roacutan==3)&($cancerVitiligo==3)&($pelo!=1)&($pelo!=4)){
+		if(($fototipo!="VI")&($corPelo!=2)&($corPelo!=1)&($corPelo!=5)&($roacutan==3)&($cancerVitiligo==3)&($pelo!=1)&($pelo!=4)){
 			$situacao=1;
 		}
-		if(($corPelo==1)||($roacutan==2)||($cancerVitiligo==2)&($pelo==1)||($pelo==4)){
+
+		if(($fototipo=="VI")||($corPelo==1)||($corPelo==2)||($corPelo==5)||($roacutan==2)||($cancerVitiligo==2)||($pelo==1)||($pelo==4)){
 			$situacao=2;
 		}
-		if(($fototipo=="VI")||($corPelo==1)||($roacutan==1)||($cancerVitiligo==1)){
+
+		if(($roacutan==1)||($cancerVitiligo==1)){
 			$situacao=3;
 		}
+
 		$queryInserirUsuario ="INSERT INTO clientesformulario VALUES (NULL, '$nome', $idade, '$email', '$telefone', '$fototipo', '$corPelo', '$roacutan', '$cancerVitiligo', '$pelo', '$situacao');";
 
 		$resultado9=$conexao->query($queryInserirUsuario);
-		if(($fototipo!="VI")&($corPelo==2)&($roacutan==3)&($cancerVitiligo==3)&($pelo!=1)&($pelo!=4)){
+		if(($fototipo!="VI")&($corPelo!=2)&($corPelo!=1)&($corPelo!=5)&($roacutan==3)&($cancerVitiligo==3)&($pelo!=1)&($pelo!=4)){
 			echo "<script>
 				window.location.href='../positivo.php?nome=$nome';
 			</script>";

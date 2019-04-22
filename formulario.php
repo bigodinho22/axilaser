@@ -77,10 +77,10 @@
 							<i>Qual a cor de seu pelo? (Região que você deseja fazer depilação a laser)</i>
 							<select style="width: 100%;" name="corPelo">
 								<option value=1>Loiro</option>
-								<option value=1>Ruivo</option>
-								<option value=2>Preto</option>
-								<option value=2>Castanho</option>
-								<option value=1>Branco</option>
+								<option value=2>Ruivo</option>
+								<option value=3>Preto</option>
+								<option value=4>Castanho</option>
+								<option value=5>Branco</option>
 							</select>
 						</span>
 						<span>

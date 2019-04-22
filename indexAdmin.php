@@ -44,7 +44,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<br />
 	<div class="agenda">
 		<div class="container">
-			<h1 style= "text-align: center;" >Agenda</h1>
+			<h1 style= "text-align: center;color: #666666" >Agenda</h1>
 			<br>
 			<br>
 			<form action="resultadoPesquisa.php" method="post">

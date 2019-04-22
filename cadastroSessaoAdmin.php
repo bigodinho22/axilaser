@@ -89,10 +89,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </script>
 	<div class="cadastroSessao">
 		<div class="container">
-			<br>
-			<h2 class="agileits-title">Cadastro de Sessões</strong></h2>
-			<br>
 				<div class="agileits_mail_grid_right1 agile_mail_grid_right1" id="formCadastroSessao">
+					<h2 class="agileits-title" style="color: #666666">Cadastro de Sessões</strong></h2>
 					<form action="php/inserirDatasDisponiveis.php" method="post">
 						<span>
 							<i>Datas Disponíveis:</i>

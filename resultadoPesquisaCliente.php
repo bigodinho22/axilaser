@@ -77,7 +77,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				?>	
 			</table>
 			<div style="display:flex;justify-content: center;margin-top: 2%;"> 
-			<input type="button" onclick="window.location.href='clientesLista.php'" value="Voltar" />
+			<input type="button" onclick="window.location.href='clientesLista.php'" value="Voltar" class="botaoVoltarFicha"/>
 		</div>
 	</div>
 	<?php

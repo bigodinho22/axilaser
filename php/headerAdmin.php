@@ -16,7 +16,8 @@
 <link rel="shortcut icon" type="image/x-icon" href="images/icon.ico" />
 <!-- //Custom Theme files -->
 <!-- js -->
-<script src="js/jquery-2.2.3.min.js"></script> 
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="picker/jquery-ui.multidatespicker.js"></script> 
 <!-- //js -->
 <!-- web-fonts -->
 <link href='//fonts.googleapis.com/css?family=Text+Me+One' rel='stylesheet' type='text/css'>

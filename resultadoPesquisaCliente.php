@@ -39,7 +39,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<br>
 	<div class="agenda">
 		<div class="container">
-			<h1 style= "text-align: center;" >Resultado da pesquisa por: <?php echo isset($_POST["nomePesquisaC"])?$_POST["nomePesquisaC"]:$_POST["nomePesquisaNC"]; ?></h1>
+			<h1 style= "text-align: center; color: #666666" >Resultado da pesquisa por: <?php echo isset($_POST["nomePesquisaC"])?$_POST["nomePesquisaC"]:$_POST["nomePesquisaNC"]; ?></h1>
 			<br>
 			<br>
 			<?php

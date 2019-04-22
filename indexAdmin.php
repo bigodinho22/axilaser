@@ -17,7 +17,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		$alteracao=$_GET["alteracao"];
 		$queryUpdate = "update agenda set compareceu=".$alteracao." where id_agenda=".$id_agenda;
 
-		$query = "select id_cliente from agenda";
+		$query = "select id_cliente from agenda where id_agenda=".$id_agenda;
     
     	$resultado = $conexao->query($query);
     	while ($registro=$resultado->fetch_assoc()) {

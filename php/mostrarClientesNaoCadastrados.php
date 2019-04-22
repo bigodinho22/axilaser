@@ -1,6 +1,6 @@
 <?php 
     require "conexao.php";
-    $query2 = "select nome, email, telefone, situacao from clientesformulario order by `nome` asc";
+    $query2 = "select id_cliente_formulario, nome, email, telefone, situacao from clientesformulario order by `nome` asc";
             
     $resultado2 = $conexao->query($query2);
     $situacao= "";
@@ -18,7 +18,14 @@
             echo 
             "<tr>
                 <td style= 'text-align: center; 
-                        border: 1px solid black;'>".$registro2["nome"]."</td>
+                        border: 1px solid black;'>
+                        <div class='opcoesDiv' id='opcoesCli".$registro2["id_cliente_formulario"]."' onMouseOver='mouseOver(".$registro2["id_cliente_formulario"].")' onMouseOut='mouseOut(".$registro2["id_cliente_formulario"].")'>
+                            <a href='ficha.php?id_usuario=".$registro2["id_cliente_formulario"]."'>Mais Informações</a>
+                        </div>
+                        <span  class='spanHorario' onMouseOver='mouseOver(".$registro2["id_cliente_formulario"].")'
+                        onMouseOut='mouseOut(".$registro2["id_cliente_formulario"].")' style='display:inline'>".$registro2["nome"]."</span>
+                        <br />
+                        </td>
                 <td style= 'text-align: center; 
                         border: 1px solid black;'>".$registro2["email"]."</td>
                 <td style= 'text-align: center; 

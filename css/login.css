@@ -39,7 +39,7 @@
     background-color: #eee;
     border: solid 1px #00bcc5;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-    width: 8%;
+    width: 10%;
     margin-top: -20px;
     margin-left: -32px;
 }
@@ -443,9 +443,6 @@ div#loginn{
 	top: 10%;
 }
 
-.tdHorario:hover .opcoes{
-	display: block;
-}
 
 .navbar-default .navbar-nav > li > a {
 	padding:.9em 0 !important;

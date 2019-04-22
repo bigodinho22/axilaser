@@ -36,6 +36,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     	}
 	}
 ?>
+<script>
+	function mouseOver(i) {
+	  document.getElementById('opcoesCli'+i).style.display = 'block';
+	}
+
+	function mouseOut(i) {
+	  document.getElementById('opcoesCli'+i).style.display = 'none';
+	}
+</script>
 	<br>
 	<div class="agenda">
 		<div class="container">

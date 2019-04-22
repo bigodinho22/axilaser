@@ -22,8 +22,12 @@
                   ";
             while($registroHoras = $resultado2->fetch_assoc()){
                 echo "<div class='opcoesDiv' id='opcoes".$registroHoras["id_horario_data"]."' onMouseOver='mouseOver(".$registroHoras["id_horario_data"].")'
-   onMouseOut='mouseOut(".$registroHoras["id_horario_data"].")'><a href='editarHorarios.php?id_horario=".$registroHoras["id_horario_data"]."'>Editar</a> || <a href='cadastroSessaoAdmin.php?id_horario=".$registroHoras["id_horario_data"]."'>Apagar</a></div><span  class='spanHorario' onMouseOver='mouseOver(".$registroHoras["id_horario_data"].")'
-   onMouseOut='mouseOut(".$registroHoras["id_horario_data"].")' style='display:inline'>".$registroHoras["horarioF"]."</span><br />";
+                    onMouseOut='mouseOut(".$registroHoras["id_horario_data"].")'>
+                    <a href='editarHorarios.php?id_horario=".$registroHoras["id_horario_data"]."'>Editar</a> || <a href='cadastroSessaoAdmin.php?id_horario=".$registroHoras["id_horario_data"]."'>Apagar</a>
+                    </div>
+                    <span  class='spanHorario' onMouseOver='mouseOver(".$registroHoras["id_horario_data"].")'
+                    onMouseOut='mouseOut(".$registroHoras["id_horario_data"].")' style='display:inline'>".$registroHoras["horarioF"]."</span>
+                    <br />";
             }
             echo "
                     </td>

@@ -64,7 +64,7 @@
 		}";
 		}else{
 			echo "Você deseja realmente apagar esse horario?')){
-				window.location.href='php/apagarHorario.php?id_horario=$id_horario';
+				window.location.href='php/apagarHorarios.php?id_horario=$id_horario';
 		}else{
 			window.location.href='cadastroSessaoAdmin.php';
 		}";

@@ -95,7 +95,7 @@
 							<i>Tem câncer ou vitiligo?</i>
 							<select style="width: 100%;" name="cancerVitiligo">
 								<option value=1>Sim, tenho câncer e/ou vitiligo</option>
-								<option value=2>Sim, já tive câncer e/ou vitiligo</option>
+								<option value=2>Sim, já tive câncer</option>
 								<option value=3>Não</option>
 							</select>
 						</span>

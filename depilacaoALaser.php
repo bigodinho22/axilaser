@@ -35,7 +35,7 @@
 					</div>
 					<br>
 					<div class="start wow flipInX">
-						<a href="cadastro.php" class="hvr-bounce-to-bottom" id="btnDepF">AGENDAR LASER GRÁTIS!</a>
+						<a href="laserGratis.php" class="hvr-bounce-to-bottom" id="btnDepF">AGENDAR LASER GRÁTIS!</a>
 					</div> 
 				</td>
 				<td class="depilacao2">
@@ -54,7 +54,7 @@
 					</div>
 					<br>
 					<div class="start wow flipInX">
-						<a href="cadastro.php" class="hvr-bounce-to-bottom" id="btnDepM">AGENDAR LASER GRÁTIS!</a>
+						<a href="laserGratis.php" class="hvr-bounce-to-bottom" id="btnDepM">AGENDAR LASER GRÁTIS!</a>
 					</div> 
 				</td>
 			</tr>

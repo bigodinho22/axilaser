@@ -14,7 +14,7 @@
 					<br />
 					<br />
 					<br />
-					<a href="cadastro.php" class="bnrw3-agiletext" style="border-radius: 50px;">Agendar laser grátis!</a>
+					<a href="laserGratis.php" class="bnrw3-agiletext" style="border-radius: 50px;">Agendar laser grátis!</a>
 				</div>
 			</div>
 		</div>

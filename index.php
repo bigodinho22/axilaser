@@ -73,11 +73,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
 							<ul class="nav navbar-nav navbar-right">
 								<li><a href="index.php">Home</a></li>
-								<li><a href="programas.php">Nossos Programas</a></li>
-								<li><a href="depilacao.php">Depilação a Laser</a></li>  
-					            <li><a href="formulario.php" class="corPreAvaliacao">Pré Avaliação</a></li>
+								<li><a href="nossosProgramas.php">Nossos Programas</a></li>
+								<li><a href="depilacaoALaser.php">Depilação a Laser</a></li>  
+					            <li><a href="preAvaliacao.php" class="corPreAvaliacao">Pré Avaliação</a></li>
 								<li><a href="#contato">Contato </a></li>
-								<li><a href="cadastro.php" id="btnLaserGratisMenu">Laser Grátis</a></li>
+								<li><a href="laserGratis.php" id="btnLaserGratisMenu">Laser Grátis</a></li>
 								<li><a href="login.php">Login</a></li>
 							</ul> 
 							<div class="clearfix"> </div>	
@@ -105,7 +105,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="indexBotaoText">
 					<div class="container"> 
 					    <h3 class="agileits-title" id="titleIndex">AGENDE O SEU LASER GRÁTIS!</h3>	 
-						<a href="cadastro.php" class="bnrw3-agiletext" id="btnPrincipal">AGENDAR AGORA!</a>
+						<a href="laserGratis.php" class="bnrw3-agiletext" id="btnPrincipal">AGENDAR AGORA!</a>
 					</div>
 				</div>
 			</div>     
@@ -118,12 +118,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<h3 class="agileits-title w3title2" id="titleNossosProgramas">NOSSOS PROGRAMAS</h3> 
 				<br>
 				<div class="col-md-6 col-sm-6 col-xs-6 services-grids" id="btnClubeAxiPrincipal">  
-					<a href="programas.php"> 
+					<a href="nossosProgramas.php"> 
 						<h4>Programa CLUBE AXI</h4>
 					</a>
 				</div>
 				<div class="col-md-6 col-sm-6 col-xs-6 services-grids" id="btnAxiBlackPrincipal">
-						<a href="programas.php">
+						<a href="nossosProgramas.php">
 							<h4>Tratamento Tradicional</h4>
 						</a>
 				</div> 

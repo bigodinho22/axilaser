@@ -105,7 +105,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<br>
 	<div class="agenda">
 		<div class="container">
-			<h1 style= "text-align: center;" >Clientes cadastrados no sistema</h1>
+			<h1 style= "text-align: center; color: #666666" >Clientes cadastrados no sistema</h1>
 			<br>
 			<br>
 			<form action="resultadoPesquisaCliente.php" method="post">
@@ -129,7 +129,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					include_once 'php/mostrarClientesCadastrados.php';
 				?>
 			</table>
-			<h1 style= "text-align: center; margin-top: 4%;" >Clientes que preencheram o formulário de avaliação apenas</h1>
+			<h1 style= "text-align: center; margin-top: 4%; color: #666666" >Clientes que preencheram o formulário de avaliação apenas</h1>
 			<br>
 			<br>
 			<form action="resultadoPesquisaCliente.php" method="post">

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 22-Abr-2019 às 01:56
+-- Generation Time: 23-Abr-2019 às 16:55
 -- Versão do servidor: 5.7.23
 -- versão do PHP: 7.2.10
 
@@ -32,6 +32,7 @@ DROP TABLE IF EXISTS `admin`;
 CREATE TABLE IF NOT EXISTS `admin` (
   `login` varchar(120) NOT NULL,
   `senha` varchar(8) NOT NULL,
+  `tipo` int(1) NOT NULL,
   PRIMARY KEY (`login`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -39,8 +40,8 @@ CREATE TABLE IF NOT EXISTS `admin` (
 -- Extraindo dados da tabela `admin`
 --
 
-INSERT INTO `admin` (`login`, `senha`) VALUES
-('admin', 'admin');
+INSERT INTO `admin` (`login`, `senha`, `tipo`) VALUES
+('admin', 'admin', 1);
 
 -- --------------------------------------------------------
 

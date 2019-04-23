@@ -3,14 +3,18 @@
 
   $login = $_POST["login"];
   $senhaAdmin = $_POST["senhaAdmin"];
-
+  $tipo=0;
   include_once 'conexao.php';
 
-   $query_select = "SELECT login, senha FROM admin WHERE login = '$login' AND senha = '$senhaAdmin'";
+   $query_select = "SELECT login, senha, tipo FROM admin WHERE login = '$login' AND senha = '$senhaAdmin'";
 
    $resultado = $conexao->query($query_select);
 
    if($resultado->num_rows > 0){
+      while($select=$resultado->fetch_assoc()){
+        $tipo=$select["tipo"];
+      }
+      $_SESSION["tipoAdmin"] = $tipo;
       $_SESSION["logadoAdmin"] = true;
 
       header('location:../indexAdmin.php');

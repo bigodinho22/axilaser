@@ -49,7 +49,11 @@
 								<li><a href="indexAdmin.php">Agenda</a></li>
 								<li><a href="cadastroSessaoAdmin.php">Cadastrar Sessão</a></li>
 								<li><a href="clientesLista.php">Listar clientes</a></li>
-								<li><a href="controle.php">Controle</a></li>
+								<?php 
+									if($_SESSION["tipoAdmin"]==1){
+										echo "<li><a href='controle.php'>Controle</a></li>";
+									}
+								?>
 								<li><a href="php/sair.php"><i class="glyphicon glyphicon-log-out"></i>  Sair</a></li>
 							</ul> 
 							<div class="clearfix"> </div>	

@@ -10,7 +10,7 @@
 					<form action="php/cadastrarAdmin.php" method="post">
 						<span>
 							<i>Login</i>
-							<input type=text name="login" placeholder=" " required="">
+							<input type=text name="loginAdmin" placeholder=" " required="">
 						</span>
 						<span>
 							<i>Senha</i>

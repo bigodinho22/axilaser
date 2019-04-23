@@ -15,7 +15,7 @@
 
 	$resultado8 = $conexao->query($queryVerificaEmail);
 	if($resultado8->num_rows>0){
-		echo "<script language='javascript' type='text/javascript'> alert('Esse e-mail já realizou uma pré-avaliação!'); window.location.href='../formulario.php';</script>";
+		echo "<script language='javascript' type='text/javascript'> alert('Esse e-mail já realizou uma pré-avaliação!'); window.location.href='../preAvaliacao.php';</script>";
 	}else{
 		if(($fototipo!="VI")&($corPelo!=2)&($corPelo!=1)&($corPelo!=5)&($roacutan==3)&($cancerVitiligo==3)&($pelo!=1)&($pelo!=4)){
 			$situacao=1;
@@ -34,7 +34,7 @@
 		$resultado9=$conexao->query($queryInserirUsuario);
 		if(($fototipo!="VI")&($corPelo!=2)&($corPelo!=1)&($corPelo!=5)&($roacutan==3)&($cancerVitiligo==3)&($pelo!=1)&($pelo!=4)){
 			echo "<script>
-				window.location.href='../positivo.php?nome=$nome';
+				window.location.href='../apto.php?nome=$nome';
 			</script>";
 		}else{
 			echo "<script language='javascript' type='text/javascript'>

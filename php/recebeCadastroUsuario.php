@@ -15,7 +15,7 @@
 
 	if($resultado8->num_rows>0){
 
-		echo "<script language='javascript' type='text/javascript'> alert('Esse e-mail já está cadastrado'); window.location.href='../cadastro.php';</script>";
+		echo "<script language='javascript' type='text/javascript'> alert('Esse e-mail já está cadastrado'); window.location.href='../laserGratis.php';</script>";
 
 	}else{	
 

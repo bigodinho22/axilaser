@@ -1,9 +1,21 @@
 <?php
 	include 'php/headerAdmin.php';
 ?>
+
 <?php
 	require 'php/validarLoginAdmin.php';
 ?>
+
+<script>
+	function mouseOver(i) {
+	  document.getElementById('opcoes'+i).style.display = 'block';
+	}
+
+	function mouseOut(i) {
+	  document.getElementById('opcoes'+i).style.display = 'none';
+	}
+</script>
+
 <div>
 	<div class="container">
 		<div class="agileits_mail_grid_right1 agile_mail_grid_right1" id="formCadastroSessao">
@@ -21,30 +33,27 @@
 						<input type="submit" value="Adicionar Funcionário">
 					</div>
 				</form>
-				</div>
-				<div class="tabelaAdminDiv">
-					<table class="tabelaAdmin">
-						<tr>
-								<th style= "text-align: center; 
-	                            color: black; 
-	                            border: 1px solid black; padding: 5px;">Dia</th>
-								<th style= "text-align: center; 
-	                            color: black; 
-	                            border: 1px solid black; padding: 5px;">Horários</th>
-	                            <th style= "text-align: center; 
-	                            color: black; 
-	                            border: 1px solid black; padding: 5px;">Agendamento</th>
-	                            <th style= "text-align: center; 
-	                            color: black; 
-	                            border: 1px solid black; padding: 5px;">Opções</th>
-						</tr>
-						<?php
-							include_once 'php/mostrarDatasDisponiveis.php';
-						?>
-						</table>
-					</div>
+		</div>
+		<div class="tabelaAdminDiv">
+			<table class="tabelaAdmin">
+				<tr>
+					<th style= "text-align: center; 
+	                    color: black; 
+	                    border: 1px solid black; padding: 5px;">Login</th>
+					<th style= "text-align: center; 
+	                    color: black; 
+	                    border: 1px solid black; padding: 5px;">Senha</th>
+	                <th style= "text-align: center; 
+	                    color: black; 
+	                    border: 1px solid black; padding: 5px;">Opções</th>
+				</tr>
+				<?php
+					include_once 'php/listagemAdms.php';
+				?>
+			</table>
 		</div>
 	</div>
+</div>
 <?php
 	require 'footer.php';
 ?>

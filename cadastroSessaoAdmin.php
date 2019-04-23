@@ -1,7 +1,4 @@
 <?php
-	include 'php/headerAdmin.php';
-?>
-<?php
 	require 'php/validarLoginAdmin.php';
 	if(isset($_GET["id_data"])){
 		require "php/Conexao.php";
@@ -71,6 +68,9 @@
 		};
 		echo "</script>";
 	}
+?>
+<?php
+	include 'php/headerAdmin.php';
 ?>
 <!--
 Author: W3layouts

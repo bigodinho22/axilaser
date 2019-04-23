@@ -41,9 +41,6 @@
 					<th style= "text-align: center; 
 	                    color: black; 
 	                    border: 1px solid black; padding: 5px;">Login</th>
-					<th style= "text-align: center; 
-	                    color: black; 
-	                    border: 1px solid black; padding: 5px;">Senha</th>
 	                <th style= "text-align: center; 
 	                    color: black; 
 	                    border: 1px solid black; padding: 5px;">Opções</th>

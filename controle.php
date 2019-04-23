@@ -1,21 +1,22 @@
 <?php
-	include 'php/headerAdmin.php';
-?>
-
-<?php
 	require 'php/validarLoginAdmin.php';
 ?>
-
-<script>
-	function mouseOver(i) {
-	  document.getElementById('opcoes'+i).style.display = 'block';
+<?php
+	include 'php/headerAdmin.php';
+?>
+<?php 
+	if(isset($_GET["login"])){
+		require "php/Conexao.php";
+		$login=$_GET["login"];
+    		echo "<script>
+			if(confirm('Deseja excluir o login: ".$login." ?')){
+				window.location.href='php/apagarAdmin?login=$login';
+			}else{
+				window.location.href='controle.php';
+			}
+			</script>";
 	}
-
-	function mouseOut(i) {
-	  document.getElementById('opcoes'+i).style.display = 'none';
-	}
-</script>
-
+?>
 <div>
 	<div class="container">
 		<div class="agileits_mail_grid_right1 agile_mail_grid_right1" id="formCadastroSessao">

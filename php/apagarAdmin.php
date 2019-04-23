@@ -9,12 +9,12 @@
 	if($resultadoDelete){
 		echo "<script>
 			alert('A conta foi apagada com sucesso foi apagado com sucesso!');
-			window.location.href='../cadastroSessaoAdmin.php';
+			window.location.href='../controle.php';
 		</script>";
 	}else{
 		echo "<script>
 			alert('Erro do sistema, por favor, tente novamente');
-			window.location.href='../cadastroSessaoAdmin.php';
+			window.location.href='../controle.php';
 		</script>";
 	}
 

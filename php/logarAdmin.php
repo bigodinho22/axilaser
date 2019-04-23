@@ -2,7 +2,7 @@
   session_start();
 
   $login = $_POST["login"];
-  $senhaAdmin = $_POST["senhaAdmin"];
+  $senhaAdmin = md5($_POST["senhaAdmin"]);
   $tipo=0;
   include_once 'conexao.php';
 

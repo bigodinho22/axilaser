@@ -1,7 +1,7 @@
 <?php
 
 	$login=$_POST["loginFuncionario"];
-	$senha=$_POST["senhaFuncionario"];
+	$senha=md5($_POST["senhaFuncionario"]);
 
 	include_once "conexao.php";
 

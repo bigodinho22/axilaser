@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 23-Abr-2019 às 16:55
+-- Generation Time: 23-Abr-2019 às 20:01
 -- Versão do servidor: 5.7.23
 -- versão do PHP: 7.2.10
 
@@ -31,7 +31,7 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `admin`;
 CREATE TABLE IF NOT EXISTS `admin` (
   `login` varchar(120) NOT NULL,
-  `senha` varchar(8) NOT NULL,
+  `senha` varchar(32) NOT NULL,
   `tipo` int(1) NOT NULL,
   PRIMARY KEY (`login`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -41,7 +41,8 @@ CREATE TABLE IF NOT EXISTS `admin` (
 --
 
 INSERT INTO `admin` (`login`, `senha`, `tipo`) VALUES
-('admin', 'admin', 1);
+('admin', '21232f297a57a5a743894a0e4a801fc3', 1),
+('admin1', '21232f297a57a5a743894a0e4a801fc3', 0);
 
 -- --------------------------------------------------------
 

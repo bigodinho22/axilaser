@@ -14,14 +14,14 @@
 			}else{
 				window.location.href='controle.php';
 			}
-			</script>";
+			</script>"; 	
 	}
 ?>
 <div>
 	<div class="container">
 		<div class="agileits_mail_grid_right1 agile_mail_grid_right1" id="formCadastroSessao">
 			<h2 class="agileits-title" style="color: #666666">Cadastro de Funcionário</strong></h2>
-				<form action="php/.php" method="post">
+				<form action="php/cadastroAdmin.php" method="post">
 					<span>
 						<i>Login</i>
 						<input type="text" name="loginFuncionario" required>

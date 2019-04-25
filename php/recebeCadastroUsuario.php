@@ -20,7 +20,8 @@
 	}else{	
 
 		if($laser=="Sim"){
-
+			$queryInserirUsuario ="INSERT INTO cliente VALUES (NULL, '$nomeUsuario', $idadeUsuario, '$emailUsuario', '$telefoneUsuario', NULL);";
+			$resultado9=$conexao->query($queryInserirUsuario);
 			echo "<script language='javascript' type='text/javascript'> window.location.href='../erroForm?laser=1'; </script>";
 
 		}else{

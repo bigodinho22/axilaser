@@ -1,6 +1,6 @@
 <?php 
     require "conexao.php";
-    $query = "select login, senha from admin";
+    $query = "select login from admin";
             
     $resultado = $conexao->query($query);
 
@@ -9,9 +9,9 @@
             echo 
             "<tr>
                 <td style= 'text-align: center; 
-                        border: 1px solid black;'>".$registro["login"]."</td>
+                        border: 1px solid black; padding: 5px'>".$registro["login"]."</td>
                 <td style= 'text-align: center; 
-                        border: 1px solid black;'><a href='controle.php?login=".$registro["login"]."'>Apagar conta </a></td>
+                        border: 1px solid black; padding: 5px'><a href='controle.php?login=".$registro["login"]."'>Apagar conta </a></td>
             </tr>";
         };
     }

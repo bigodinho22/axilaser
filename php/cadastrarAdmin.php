@@ -1,7 +1,7 @@
 <?php
 
 	$login=$_POST["loginAdmin"];
-	$senha=$_POST["senhaAdmin"];
+	$senha=md5($_POST["senhaAdmin"]);
 
 	include_once "conexao.php";
 

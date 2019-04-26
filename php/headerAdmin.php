@@ -61,7 +61,7 @@
 					</nav>
 				</div>  
 			</div>
-			<h1><a href="index" id="logo"><img src="images/logo.png"></a></h1>
+			<h1><a href="index" id="logo"><img src="images/logo.png" alt="Logo-Axilaser" title="Logo Axilaser"></a></h1>
 		</div>
 		<!-- //header -->  
 	</div>	 

@@ -33,42 +33,42 @@
 								<div class="col-md-6 ab-text three w3-agileits">
 									<input type="radio" name="fototipo" value="I" id="I" checked > I
 									<label for="I">
-										<img src="images/fototipoI.jpg" style="width: 50%;">
+										<img src="images/fototipoI.jpg" title="Fototipo 1" alt="fototipo-para-depilação-1" style="width: 50%;">
 									</label>
 								</div>
 
 								<div class="col-md-6 ab-text three w3-agileits">
 									<input type="radio" name="fototipo" value="II" id="II"> II
 									<label for="II">
-										<img src="images/fototipoII.jpg" style="width: 50%;">
+										<img src="images/fototipoII.jpg" title="Fototipo 2" alt="fototipo-para-depilação-2" style="width: 50%;">
 									</label>
 								</div>
 
 								<div class="col-md-6 ab-text three w3-agileits">
 									<input type="radio" name="fototipo" value="III" id="III"> III
 									<label for="III">
-										<img src="images/fototipoIII.jpg"  style="width: 50%;">
+										<img src="images/fototipoIII.jpg" title="Fototipo 3" alt="fototipo-para-depilação-3" style="width: 50%;">
 									</label>
 								</div>
 
 								<div class="col-md-6 ab-text three w3-agileits">
 									<input type="radio" name="fototipo" value="IV" id="IV"> IV
 									<label for="IV">
-										<img src="images/fototipoIV.jpg"  style="width: 50%;">
+										<img src="images/fototipoIV.jpg" title="Fototipo 4" alt="fototipo-para-depilação-4" style="width: 50%;">
 									</label>
 								</div>
 
 								<div class="col-md-6 ab-text three w3-agileits">
 									<input type="radio" name="fototipo" value="V" id="V"> V
 									<label for="V">
-										<img src="images/fototipoV.jpg"  style="width: 50%;">
+										<img src="images/fototipoV.jpg" title="Fototipo 5" alt="fototipo-para-depilação-5" style="width: 50%;">
 									</label>
 								</div>
 
 								<div class="col-md-6 ab-text three w3-agileits">
 									<input type="radio" name="fototipo" value="VI" id="VI"> VI
 									<label for="VI">
-										<img src="images/fototipoVI.jpg"  style="width: 50%;">
+										<img src="images/fototipoVI.jpg" title="Fototipo 6" alt="fototipo-para-depilação-6" style="width: 50%;">
 									</label>
 								</div>
 							</div>

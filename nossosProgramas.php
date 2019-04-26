@@ -23,14 +23,14 @@
 								<div class="abt-block">
 									<div class="serv_abs serv_bottom" style="background-color: #7b1887 !important"></div>
 									<h3>Pacote Comfort</h3>
-									<p>Pacote especial, aonde o cliente tem a possibilidade de fazer depilação a laser nas <strong>regiões mais procuradas como Axilas, Virilha Completa e Ânus ou Buço, por um valor fixo</strong>.</p>
+									<p>Pacote especial, aonde o cliente faz depilação a laser nas <strong>três regiões mais procuradas: Axilas, Virilha Completa e a terceira você escolhe entre Ânus ou Buço</strong>.</p>
 								</div>
 							</div>
 							<div class="col-lg-4 my-lg-0 my-md-5">
 								<div class="abt-block">
 									<div class="serv_abs serv_bottom" style="background-color: #b3b3b3!important"></div>
 									<h3>Pacote Axi</h3>
-									<p>Tratamento de <strong>10 sessões em todas as áreas do corpo </strong>  que o cliente desejar por um <strong>valor único e mensal</strong>.</p>
+									<p>A solução para quem deseja fazer depilação a laser <strong>em todas as áreas e pagar um único valor fixo mensal</strong>.</p>
 								</div>
 							</div>
 						</div>

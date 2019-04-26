@@ -33,10 +33,12 @@
 						if($pelo==1||$pelo==4){
 							echo "<strong> a espessura dos seus pelos, </strong>";
 						}
-
 						echo "não é/são indicado(s) para o tratamento.";
-
-						echo "<h4 style='text-align: center; color: #7b1887; font-size: 23px !important;'><strong>Aconselhamos uma avaliação presencial caso você tenha ficado com alguma dúvida ao preencher o questionário</strong></h4>";
+						if(($pelo==1||$pelo==4) && $fototipo!="VI" && $roacutan!=2 && $cancerVitiligo!=2){
+							echo "<h4 style='text-align: center; color: #7b1887; font-size: 23px !important;'><strong>Caso você teve dificuldade em afirmar com <span>precisão</span> a espessura dos seus pelos, aconselhamos uma avaliação presencial</strong></h4>";
+						}else{
+							echo "<h4 style='text-align: center; color: #7b1887; font-size: 23px !important;'><strong>Aconselhamos uma avaliação presencial caso você tenha ficado com alguma dúvida ao preencher o questionário</strong></h4>";
+						}
 					}else{
 						echo "Infelizmente você não pode realizar as sessões pelos devidos motivos:";
 						echo "<h4 style='color: black !important; text-align:center'>A depilação à laser é contraindicada para "

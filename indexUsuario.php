@@ -83,7 +83,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</nav>
 			</div>  
 		</div>
-		<h1><a href="index.php" id="logo"><img src="images/logo"></a></h1>
+		<h1><a href="index" id="logo"><img src="images/logo.png"></a></h1>
 		</div>
 		<!-- //header -->  
 	</div>	 

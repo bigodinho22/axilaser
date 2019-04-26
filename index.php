@@ -72,20 +72,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<!-- navbar-header -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="index.php">Home</a></li>
-								<li><a href="nossosProgramas.php">Nossos Programas</a></li>
-								<li><a href="depilacaoALaser.php">Depilação a Laser</a></li>  
-					            <li><a href="preAvaliacao.php" class="corPreAvaliacao">Pré Avaliação</a></li>
+								<li><a href="index">Home</a></li>
+								<li><a href="nossosProgramas">Nossos Programas</a></li>
+								<li><a href="depilacaoALaser">Depilação a Laser</a></li>  
+					            <li><a href="preAvaliacao" class="corPreAvaliacao">Pré Avaliação</a></li>
 								<li><a href="#contato">Contato </a></li>
-								<li><a href="laserGratis.php" id="btnLaserGratisMenu">Laser Grátis</a></li>
-								<li><a href="login.php">Login</a></li>
+								<li><a href="laserGratis" id="btnLaserGratisMenu">Laser Grátis</a></li>
+								<li><a href="login">Login</a></li>
 							</ul> 
 							<div class="clearfix"> </div>	
 						</div>
 					</nav>
 				</div>  
 			</div>
-			<h1><a href="index.php" id="logo"><img src="images/logo"></a></h1>
+			<h1><a href="index" id="logo"><img src="images/logo.png"></a></h1>
 		</div>
 		<div class="video jarallax" data-vide-bg="videos/laser">
 		<!-- //header --> 

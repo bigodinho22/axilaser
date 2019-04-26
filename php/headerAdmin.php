@@ -46,12 +46,12 @@
 						<!-- navbar-header -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="indexAdmin.php">Agenda</a></li>
-								<li><a href="cadastroSessaoAdmin.php">Cadastrar Sessão</a></li>
-								<li><a href="clientesLista.php">Listar clientes</a></li>
+								<li><a href="indexAdmin">Agenda</a></li>
+								<li><a href="cadastroSessaoAdmin">Cadastrar Sessão</a></li>
+								<li><a href="clientesLista">Listar clientes</a></li>
 								<?php 
 									if($_SESSION["tipoAdmin"]==1){
-										echo "<li><a href='controle.php'>Controle</a></li>";
+										echo "<li><a href='controle'>Controle</a></li>";
 									}
 								?>
 								<li><a href="php/sair.php"><i class="glyphicon glyphicon-log-out"></i>  Sair</a></li>
@@ -61,7 +61,7 @@
 					</nav>
 				</div>  
 			</div>
-			<h1><a href="index.php" id="logo"><img src="images/logo"></a></h1>
+			<h1><a href="index" id="logo"><img src="images/logo.png"></a></h1>
 		</div>
 		<!-- //header -->  
 	</div>	 

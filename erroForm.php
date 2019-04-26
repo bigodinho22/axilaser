@@ -15,16 +15,12 @@
 					$cancerVitiligo=$_GET["cv"];
 					$pelo=$_GET["pelo"];
 
-					if($roacutan!=1 && $cancerVitiligo!=1){
+					if($roacutan!=1 && $cancerVitiligo!=1 && $corPelo!=1){
 
 						echo "COM BASE EM SUAS INFORMAÇÕES,";
 
 						if($fototipo=="VI"){
 							echo "<strong> seu fototipo, </strong>";
-						}
-
-						if($corPelo==1){
-							echo "<strong> a coloração dos seus pelos, </strong>";
 						}
 						
 						if($roacutan==2){
@@ -43,14 +39,19 @@
 						echo "<h4 style='text-align: center; color: #7b1887; font-size: 23px !important;'><strong>Aconselhamos uma avaliação presencial caso você tenha ficado com alguma dúvida ao preencher o questionário</strong></h4>";
 					}else{
 						echo "Infelizmente você não pode realizar as sessões pelos devidos motivos:";
+						echo "<h4 style='color: black !important; text-align:center'>A depilação à laser é contraindicada para "
+						if($corPelo==1){
+							echo "<strong>pelos ruivos, loiros ou brancos<strong>, ";
+						}
 					
 						if($roacutan==1){
-							echo "<h4 style='color: black !important; text-align:center'>Não é possível realizar a depilação a laser se você está tomando Roacutan.<strong> Qualquer dúvida estamos a disposição</strong>.</h4><br>";
+							echo "<strong>pessoas que estão tomando Roacutan</strong>, ";
 						}
 
 						if($cancerVitiligo==1){
-							echo "<h4 style='color: black !important; text-align:center'>Se você esta diagnosticado com câncer ou vitiligo, não é possível realizar a depilação a laser.<strong> Qualquer dúvida estamos a disposição</strong>.</h4><br>";
+							echo "<strong>pessoas que estão diagnosticadas com câncer ou vitiligo</strong>, ";
 						}
+						echo "para mais informações, entre em contato conosco</h4>";
 					}
 
 				}else{

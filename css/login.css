@@ -1,3 +1,7 @@
+.navCor {
+	font-size: 13px !important;
+}
+
 .listaLogin{
     right: auto;
     display: inline-block;
@@ -80,7 +84,8 @@
 
 .clubeaxi{
 	padding: 2%;
-
+	width: 50%;
+	margin-left: 25%;
 }
 
 
@@ -365,7 +370,6 @@ div#loginn{
 }
 
 .titleProgramas{
-	font-size: 2em !important;
 	text-align: center;
 	border-radius: 50px;
 	color: white !important;
@@ -374,10 +378,12 @@ div#loginn{
 
 #titleClubeAxi{
 	background-color: #7b1887 !important;
+	font-size: 2em;
 }
 
 #titleAxiBlack{
 	background-color: #00bcc5 !important;
+	font-size: 2em;
 }
 
 #sessoes{
@@ -541,10 +547,26 @@ h1, h2, h3, h4, h5, h6{
     color: #fff;
 }
 
-@media(max-width:552px){
-		
+@media(min-width: 480px) and (max-width:660px){
+	#titleClubeAxi{
+		font-size: 1.8em;
+	}
+
+	#titleAxiBlack{
+		font-size: 1.8em;
+	}
 }
 
+@media(max-width:479px){
+	#titleClubeAxi{
+		font-size:1.6em;
+	}
+
+	#titleAxiBlack{
+		font-size:1.6em;
+	}
+}
+	
 @media(max-width: 490px){
 	#fotodepil{
 		width: 80%;

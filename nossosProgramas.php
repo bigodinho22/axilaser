@@ -6,7 +6,7 @@
 		<div class="container py-xl-5 py-lg-3">
 			<div class="ins-sec1">
 				<div class="clubeaxi">
-					<h3 class="agileits-title titleProgramas" id="titleClubeAxi">Programa CLUBE AXI</h2> 
+					<h3 class="col-md-6 agileits-title titleProgramas" id="titleClubeAxi">Programa CLUBE AXI</h2> 
 				</div>
 				<br>
 				<br>
@@ -44,14 +44,14 @@
 							<div class="row">
 								<div class="col-lg-6 my-lg-0 my-md-5 programas">
 									<div class="abt-block mt-sm-0">
-										<div class="serv_abs  serv_bottom" style="background-color: black !important"></div>
+										<div class="serv_abs  serv_bottom" style="background-color: #00bcc5 !important"></div>
 										<h3>Sessão Avulsa</h3>
 										<p>O cliente tem a possibilidade de fazer a <strong>sessão na região que desejar, sem precisar fechar qualquer um de nossos pacotes</strong>.</p>
 									</div>
 								</div>
 								<div class="col-lg-6 mt-lg-0 mt-md-5">
 									<div class="abt-block">
-										<div class="serv_abs  serv_bottom" style="background-color: black !important"></div>
+										<div class="serv_abs  serv_bottom" style="background-color: #00bcc5 !important"></div>
 										<h3>Pacote 10 Sessões</h3>
 										<p>Se trata do pacote mais tradicional, ou seja, o cliente fecha <strong>10 sessões da região que desejar, sem fazer parte do nosso programa de desconto Clube Axi</strong>.</p>
 									</div>

@@ -80,31 +80,16 @@
 
 .clubeaxi{
 	padding: 2%;
-	margin-left: 25%;
-	margin-right: 25%;
+
 }
 
-.clubeaxi h2{
-	color: black !important;
-}
-
-.clubeaxi p {
-	color: black !important;
-}
 
 .axiblack{ 
 	padding: 2%;
+	width: 50%;
 	margin-left: 25%;
-	margin-right: 25%;
 }
 
-.axiblack h2{
-	color: black !important;
-}
-
-.axiblack p {
-	color: black!important;
-}
 
 .botoesTopo{
 	color:white;
@@ -338,7 +323,7 @@ div#loginn{
 }
 
 #btnAxiBlackPrincipal.services-grids h4{
-	background-color: #666666;
+	background-color: #00bcc5;
 }
 
 #whats{
@@ -392,7 +377,7 @@ div#loginn{
 }
 
 #titleAxiBlack{
-	background-color: black !important;
+	background-color: #00bcc5 !important;
 }
 
 #sessoes{
@@ -556,6 +541,9 @@ h1, h2, h3, h4, h5, h6{
     color: #fff;
 }
 
+@media(max-width:552px){
+		
+}
 
 @media(max-width: 490px){
 	#fotodepil{

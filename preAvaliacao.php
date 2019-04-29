@@ -31,42 +31,42 @@
 							<i>Qual o seu fototipo? (coloração da pele)</i>
 							<div class="formFlex">
 								<div class="col-md-6 ab-text three w3-agileits">
-									<input type="radio" name="fototipo" value="I" id="I" checked > I
+									<input type="radio" name="fototipo" value="I" id="I" checked > I (Pele muito branca, cabelos loiros ou ruivos, olhos calros e frequentemente sardas)
 									<label for="I">
 										<img src="images/fototipoI.jpg" title="Fototipo 1" alt="fototipo-para-depilação-1" style="width: 50%;">
 									</label>
 								</div>
 
 								<div class="col-md-6 ab-text three w3-agileits">
-									<input type="radio" name="fototipo" value="II" id="II"> II
+									<input type="radio" name="fototipo" value="II" id="II"> II (Pele branca, olhos claros, cabelo claro)
 									<label for="II">
 										<img src="images/fototipoII.jpg" title="Fototipo 2" alt="fototipo-para-depilação-2" style="width: 50%;">
 									</label>
 								</div>
 
 								<div class="col-md-6 ab-text three w3-agileits">
-									<input type="radio" name="fototipo" value="III" id="III"> III
+									<input type="radio" name="fototipo" value="III" id="III"> III (Pele clara, olhos e cabelos de cor variável)
 									<label for="III">
 										<img src="images/fototipoIII.jpg" title="Fototipo 3" alt="fototipo-para-depilação-3" style="width: 50%;">
 									</label>
 								</div>
 
 								<div class="col-md-6 ab-text three w3-agileits">
-									<input type="radio" name="fototipo" value="IV" id="IV"> IV
+									<input type="radio" name="fototipo" value="IV" id="IV"> IV (Pele moderadamente pigmentada a muito pigmentada)
 									<label for="IV">
 										<img src="images/fototipoIV.jpg" title="Fototipo 4" alt="fototipo-para-depilação-4" style="width: 50%;">
 									</label>
 								</div>
 
 								<div class="col-md-6 ab-text three w3-agileits">
-									<input type="radio" name="fototipo" value="V" id="V"> V
+									<input type="radio" name="fototipo" value="V" id="V"> V (Escura ou do Sudoeste Asiático)
 									<label for="V">
 										<img src="images/fototipoV.jpg" title="Fototipo 5" alt="fototipo-para-depilação-5" style="width: 50%;">
 									</label>
 								</div>
 
 								<div class="col-md-6 ab-text three w3-agileits">
-									<input type="radio" name="fototipo" value="VI" id="VI"> VI
+									<input type="radio" name="fototipo" value="VI" id="VI"> VI (Muito escura)
 									<label for="VI">
 										<img src="images/fototipoVI.jpg" title="Fototipo 6" alt="fototipo-para-depilação-6" style="width: 50%;">
 									</label>

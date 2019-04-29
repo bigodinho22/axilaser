@@ -25,11 +25,7 @@
 		</div>
 	</div>
 	<!-- contact --> 
-	<?php
-		require 'footer.php';
-	?>
-	<!-- Time select -->
-	<script type="text/javascript" src="js/wickedpicker.js"></script>
+		<script type="text/javascript" src="js/wickedpicker.js"></script>
 	<script type="text/javascript">
 		$('.timepicker').wickedpicker({twentyFour: false});
 	</script>
@@ -83,10 +79,7 @@
 			imgHeight: 768
 		})
 	</script>   
-	<!-- //jarallax effect -->
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/bootstrap.js"></script>
-</body>
-</html>
+	<?php
+		require 'footer.php';
+	?>
+	<!-- Time select -->

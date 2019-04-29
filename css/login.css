@@ -273,7 +273,7 @@ div#loginn{
 
 #titQuemSomos{
 	color:white !important; 
-	font-size: 2.5em !important;
+	font-size: 2.5em;
 	padding-top: 3%;
 }
 
@@ -304,7 +304,7 @@ div#loginn{
 }
 
 #titleNossosProgramas{
-	font-size: 2.5em !important;
+	font-size: 2.5em;
 	color: #666666 !important;
 }
 
@@ -570,21 +570,34 @@ h1, h2, h3, h4, h5, h6{
 
 @media(min-width: 480px) and (max-width:660px){
 	#titleClubeAxi{
-		font-size: 1.8em;
+		font-size: 1.5em;
 	}
 
 	#titleAxiBlack{
-		font-size: 1.8em;
+		font-size: 1.5em;
+	}
+	#titleNossosProgramas{
+		font-size: 2em;
+	}
+	#titQuemSomos{
+		font-size: 2em;
 	}
 }
 
 @media(max-width:479px){
 	#titleClubeAxi{
-		font-size:1.6em;
+		font-size:1.2em;
 	}
 
 	#titleAxiBlack{
-		font-size:1.6em;
+		font-size:1.2em;
+	}
+
+	#titleNossosProgramas{
+		font-size: 1.8em;
+	}
+	#titQuemSomos{
+		font-size: 1.8em;
 	}
 }
 	
@@ -746,11 +759,11 @@ h1, h2, h3, h4, h5, h6{
 
 @media (max-width: 503px){
 	p.lugaresFem{
-		font-size: 16px;
+		font-size: 12px;
 	}
 
 	p.lugaresMas{
-		font-size: 15px;
+		font-size: 12px;
 	}
 }
 
@@ -765,9 +778,29 @@ h1, h2, h3, h4, h5, h6{
 		font-size: 10px;
 	}
 	#depilacaoFem, #depilacaoMas{
-		font-size: 1.7em;
+		font-size: 1.4em;
 	}
 }
+
+@media (max-width: 320px){
+#btnDepF, #btnDepM {
+    font-size: 7px;
+}
+#depilacaoFem, #depilacaoMas {
+    font-size: 1em;
+}
+
+p.lugaresMas {
+    font-size: 9px;
+}
+
+p.lugaresFem{
+		font-size: 9px;
+	}
+
+}
+
+
 
 @media (min-width: 569px) and (max-width: 830px) {
 

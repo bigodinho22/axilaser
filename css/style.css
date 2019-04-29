@@ -414,7 +414,7 @@ figure.effect-jazz:hover p {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     display: inline-block;
     border: 1px solid #7b1887;
 	-webkit-transition:.5s all;
@@ -912,7 +912,7 @@ h2.resp-accordion {
 .jarallax {
     position: relative;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: 50% 50%;
 }
 /*-- about-page --*/
@@ -2161,7 +2161,7 @@ figure.effect-jazz h4 {
     font-size: 1.6em;
 }
 h3.agileits-title, h2.agileits-title {
-    font-size: 2.8em;
+    font-size: 2.6em;
 }
 .team-row {
     margin-top: 0;
@@ -2191,7 +2191,7 @@ figure.effect-jazz h4 {
     padding-top: 25%; 
 }
 h3.agileits-title, h2.agileits-title {
-    font-size: 2.6em;
+    font-size: 2.2em;
 }
 .popular-posts {
     margin-top: 2em;
@@ -2252,7 +2252,7 @@ p.bnrw3-agiletext {
     font-size: 0.9em;  
 }
 h3.agileits-title, h2.agileits-title {
-    font-size: 2.4em;
+    font-size: 2.0em;
 }
 .services-bottom {
     margin: 0;
@@ -2328,7 +2328,7 @@ h3.agileits-title, h2.agileits-title {
     padding: 2.5em 0;
 }
 h3.agileits-title, h2.agileits-title {
-    font-size: 2.2em;
+        font-size: 1.8em;
 }
 .book-reservation label {
     font-size: 1.2em;

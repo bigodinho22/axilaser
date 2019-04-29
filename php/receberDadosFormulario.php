@@ -37,9 +37,15 @@
 				window.location.href='../apto.php?nome=$nome';
 			</script>";
 		}else{
-			echo "<script language='javascript' type='text/javascript'>
-				window.location.href='../erroForm.php?fototipo=$fototipo&corPelo=$corPelo&roacutan=$roacutan&cv=$cancerVitiligo&pelo=$pelo';
-			</script>";
+			if($roacutan!=1 && $cancerVitiligo!=1 && $corPelo!=1){
+				echo "<script language='javascript' type='text/javascript'>
+					window.location.href='../avaliacao.php?fototipo=$fototipo&corPelo=$corPelo&roacutan=$roacutan&cv=$cancerVitiligo&pelo=$pelo';
+				</script>";
+			}else{
+				echo "<script language='javascript' type='text/javascript'>
+					window.location.href='../naoApto.php?corPelo=$corPelo&roacutan=$roacutan&cv=$cancerVitiligo';
+				</script>";
+			}
 		}
 	}
 	

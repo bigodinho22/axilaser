@@ -7,7 +7,7 @@
 			<!-- about-section2 -->
 			<!-- //about-section2 -->
 			<div class="TitleErro">
-				<h3 class="agileits-title sub-titleErro" style="color: #666666 !important; font-size: 2.5em !important">
+				<h3 class="agileits-title sub-titleErro" id="titleErro">
 					<?php 
 					if(isset($_GET["roacutan"])){
 						$corPelo=$_GET["corPelo"]; 
@@ -16,7 +16,7 @@
 						echo "Infelizmente você não pode realizar as sessões pelos devidos motivos:";
 						echo "<h4 style='color: black !important; text-align:center'>A depilação à laser é contraindicada para ";
 						if($corPelo==1){
-							echo "<strong>pelos ruivos, loiros ou brancos<strong>, ";
+							echo "<strong>pelos ruivos, loiros ou brancos</strong>, ";
 						}
 					
 						if($roacutan==1){

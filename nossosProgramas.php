@@ -6,7 +6,7 @@
 		<div class="container py-xl-5 py-lg-3">
 			<div class="ins-sec1">
 				<div class="clubeaxi">
-					<h3 class="col-md-6 agileits-title titleProgramas" id="titleClubeAxi">Programa CLUBE AXI</h2> 
+					<h3 class="agileits-title titleProgramas" id="titleClubeAxi">Programa CLUBE AXI</h2> 
 				</div>
 				<br>
 				<br>

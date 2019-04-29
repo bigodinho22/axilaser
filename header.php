@@ -69,7 +69,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<li><a href="index">Home</a></li>
 								<li><a href="nossosProgramas">Nossos Programas</a></li>
 								<li><a href="depilacaoALaser">Depilação a Laser</a></li>  
-					            <li><a href="preAvaliacao" class="corPreAvaliacao">Pré Avaliação</a></li>
+					            <li><a href="preAvaliacao" class="corPreAvaliacao">Pré Avaliação Online</a></li>
 								<li><a href="#contato">Contato </a></li>
 								<li><a href="laserGratis" id="btnLaserGratisMenu">Laser Grátis</a></li>
 								<li><a href="login">Login</a></li>

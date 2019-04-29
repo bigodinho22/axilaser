@@ -33,7 +33,7 @@
 								<div class="col-md-6 ab-text three w3-agileits">
 									<input type="radio" name="fototipo" value="I" id="I" checked > I (Pele muito branca, cabelos loiros ou ruivos, olhos calros e frequentemente sardas)
 									<label for="I">
-										<img src="images/fototipoI.jpg" title="Fototipo 1" alt="fototipo-para-depilação-1" style="width: 50%;">
+										<img src="images/fototipoI.jpg" title="Fototipo 1" alt="fototipo-para-depilação-1" style="width: 42%;">
 									</label>
 								</div>
 

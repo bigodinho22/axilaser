@@ -43,6 +43,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	'https://connect.facebook.net/en_US/fbevents.js');
 	fbq('init', '238190663781713'); 
 	fbq('track', 'PageView');
+	fbq('track', 'PaginaInicial');
 	</script>
 	<noscript>
 	 <img height="1" width="1" 

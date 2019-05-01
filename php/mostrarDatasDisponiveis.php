@@ -24,7 +24,7 @@
             while($registroHoras = $resultado2->fetch_assoc()){
                 echo "<div class='opcoesDiv' id='opcoes".$registroHoras["id_horario_data"]."' onMouseOver='mouseOver(".$registroHoras["id_horario_data"].")'
                     onMouseOut='mouseOut(".$registroHoras["id_horario_data"].")'>
-                    <a href='editarHorarios.php?id_horario=".$registroHoras["id_horario_data"]."'>Editar</a> || <a href='cadastroSessaoAdmin.php?id_horario=".$registroHoras["id_horario_data"]."'>Apagar</a>
+                    <a href='editarHorarios.php?id_horario=".$registroHoras["id_horario_data"]."'>Editar</a> || <a href='confirma.php?id_horario=".$registroHoras["id_horario_data"]."'>Apagar</a>
                     </div>
                     <span  class='spanHorario' onMouseOver='mouseOver(".$registroHoras["id_horario_data"].")'
                     onMouseOut='mouseOut(".$registroHoras["id_horario_data"].")' style='display:inline'>".$registroHoras["horarioF"]."</span>
@@ -43,7 +43,7 @@
                     <td style= 'text-align: center; 
                                     color: black; 
                                     border: 1px solid black; padding: 5px;'><a href='cadastroHorarios.php?id_data=".$registro["id_data"]."'>Inserir Horários</a> <br />
-                                    <a href='cadastroSessaoAdmin.php?id_data=".$registro["id_data"]."'>Apagar Dia</a><br />   
+                                    <a href='confirma.php?id_data=".$registro["id_data"]."'>Apagar Dia</a><br />   
                                     </td></tr>";
         }
     }

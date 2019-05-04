@@ -23,8 +23,8 @@
             "<tr class='".$classe."'>
                 <td style= 'text-align: center; 
                         border: 1px solid black;'>
-                        <div class='opcoesDiv' id='opcoesCli".$registro2["id_cliente_formulario"]."' onMouseOver='mouseOver(".$registro2["id_cliente_formulario"].")' onMouseOut='mouseOut(".$registro2["id_cliente_formulario"].")'>
-                            <a href='ficha.php?id_usuario=".$registro2["id_cliente_formulario"]."'>Mais Informações</a>
+                        <div style='width: 15%' class='opcoesDiv' id='opcoesCli".$registro2["id_cliente_formulario"]."' onMouseOver='mouseOver(".$registro2["id_cliente_formulario"].")' onMouseOut='mouseOut(".$registro2["id_cliente_formulario"].")'>
+                            <a href='ficha.php?id_usuario=".$registro2["id_cliente_formulario"]."'>Mais Informações</a> || <a href='confirma.php?id_clienteNC=".$registro2["id_cliente_formulario"]."'>Apagar</a>
                         </div>
                         <span  class='spanHorario' onMouseOver='mouseOver(".$registro2["id_cliente_formulario"].")'
                         onMouseOut='mouseOut(".$registro2["id_cliente_formulario"].")' style='display:inline'>".$registro2["nome"]."</span>

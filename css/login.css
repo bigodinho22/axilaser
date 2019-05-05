@@ -557,6 +557,10 @@ h1, h2, h3, h4, h5, h6{
 	font-size: 4em;
 }
 
+.disponivel{
+	background-color: green;
+}
+
 @media(max-width: 600px){
 	#titleErro{
 		font-size: 2.0em;

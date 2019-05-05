@@ -25,6 +25,15 @@
 	$(function() {
 		$( "#datepicker" ).datepicker({
 			dateFormat: "dd/mm/yy", 
+			dayNames: [ "Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado" ], 
+			dayNamesMin: [ "D","S","T","Q","Q","S","S" ], 
+			dayNamesShort: ["Dom","Seg","Ter","Qua","Qui","Sex","Sáb","Dom"],
+		    monthNames: ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"],
+		    monthNamesShort: ["Jan","Fev","Mar",'Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'],
+		    nextText: "Próximo",
+		    prevText: "Anterior", 
+			minDate:0, 
+			maxDate:"+1M", 
 			beforeShowDay: function(mydate){
 				var $myBadDates = <?php echo json_encode($diasDisponiveis)?>;
 				var $return=false;
@@ -134,7 +143,7 @@
 								if( $(this).val() ) {
 									$('#horario').hide();
 									$('.carregando').show();
-									$.getJSON('php/horarios_post.php?search=',{id_data: $(this).val(), ajax: 'true'}, function(j){
+									$.getJSON('php/horarios_post.php?search=',{data: $(this).val(), ajax: 'true'}, function(j){
 										var options = '';
 										if(j[0].id!='invalido'){
 											options='<option value="invalido">Escolha um horário</option>';

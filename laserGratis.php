@@ -17,25 +17,25 @@
 	$(function() {
 		$( "#datepicker" ).datepicker({
 			dateFormat: "dd-mm-yy", 
-			beforeShowDay: checkAvailability
-	});
-	
-	var $myBadDates = <?php echo json_encode($diasDisponiveis)?>;
+			beforeShowDay: function(mydate){
+				var $myBadDates = <?php echo json_encode($diasDisponiveis)?>;
+				var $return=true;
+			    var $returnclass ="available";
+			    $checkdate = $.datepicker.formatDate('dd-mm-yy', mydate);
+			    for(var i = 0; i < $myBadDates.length; i++)
+			        {    
+			           if($myBadDates[i] == $checkdate)
+			              {
+			            $return = false;
+			            $returnclass= "indisponivel";
+			            }
+			        }
+			    return [$return,$returnclass];
 
-    function checkAvailability(mydate){
-    var $return=true;
-    var $returnclass ="available";
-    $checkdate = $.datepicker.formatDate('dd-mm-yy', mydate);
-    for(var i = 0; i < $myBadDates.length; i++)
-        {    
-           if($myBadDates[i] == $checkdate)
-              {
-            $return = false;
-            $returnclass= "indisponivel";
-            }
-        }
-    return [$return,$returnclass];
-    }
+			}
+		});
+	});
+
 </script> 
 <script>
 	!function(f,b,e,v,n,t,s)
@@ -90,20 +90,20 @@
 						<hr style="border-color: #7b1887">
 						<span>
 							<i>Data</i>
+							<input type="text" class="data" id="datepicker" name="data">
 							<!-- <select name="data" style="width: 100%;" id="data">
 								<option value="inavalido">Selecione um dia</option>
 								 <?php
-								 	require 'php/conexao.php';
-									$queryDatas = "SELECT id_data, DATE_FORMAT(data, '%d/%m/%Y') as data from datas ORDER BY data ASC";
-									$resultadoDatas = $conexao->query($queryDatas);
-									if($resultadoDatas->num_rows>0){
-										while($rowDatas=$resultadoDatas->fetch_assoc()) {
-											echo "<option value=".$rowDatas["id_data"].">".$rowDatas["data"]."</option>";
-										}
-									}
-								?>
+								 	//require 'php/conexao.php';
+									//$queryDatas = "SELECT id_data, DATE_FORMAT(data, '%d/%m/%Y') as data from datas ORDER BY data ASC";
+									//$resultadoDatas = $conexao->query($queryDatas);
+									//if($resultadoDatas->num_rows>0){
+										//while($rowDatas=$resultadoDatas->fetch_assoc()) {
+											//echo "<option value=".$rowDatas["id_data"].">".$rowDatas["data"]."</option>";
+										//}
+									//}
+								//?>
 							</select> -->
-							<input type="text" name="data" id="datepicker" />
 						</span>
 						<span>
 							<i>Horário</i>
@@ -150,50 +150,6 @@
 				</div>
 		</div>
 	</div>
-	<!-- //Time select --> 
-	<!-- Calendar --> 
-	<!-- //Calendar -->  
-	<!-- start-smooth-scrolling -->
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>	
-	<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-			
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-	</script>
-	<!-- //end-smooth-scrolling -->	
-	<!-- smooth-scrolling-of-move-up -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-			var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-			};
-			*/
-			
-			$().UItoTop({ easingType: 'easeOutQuart' });
-			
-		});
-	</script>
-	<!-- //smooth-scrolling-of-move-up -->  
-	<!-- jarallax effect -->
-	<script src="js/SmoothScroll.min.js"></script>
-	<script src="js/jarallax.js"></script> 
-	<script type="text/javascript">
-		/* init Jarallax */
-		$('.jarallax').jarallax({
-			speed: 0.5,
-			imgWidth: 1366,
-			imgHeight: 768
-		})
-	</script>
 	<?php
 		require 'footer.php';
 	?>

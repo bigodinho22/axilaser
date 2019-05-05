@@ -36,13 +36,13 @@
 	<!-- //Time select --> 
 	<!-- Calendar --> 
 	<script src="js/jquery-ui.js"></script>
-	<script>
+	<!--<script>
 
 	$(function() {
 		var diasSemana = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ];
 		var diasFinalSemana = [ "Sunday"];
 
-		$("#datepicker").multiDatesPicker({
+		$("#datesPicker").multiDatesPicker({
 			dayNames: [ "Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado" ], 
 			dayNamesMin: [ "D","S","T","Q","Q","S","S" ], 
 			dayNamesShort: ["Dom","Seg","Ter","Qua","Qui","Sex","Sáb","Dom"],
@@ -61,7 +61,7 @@
     	});
 
 	});
-	</script>
+	</script>-->
 	<!-- //Calendar -->  
 	<!-- start-smooth-scrolling -->
 	<script type="text/javascript" src="js/move-top.js"></script>

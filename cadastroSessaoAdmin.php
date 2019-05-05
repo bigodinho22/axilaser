@@ -26,7 +26,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<form action="php/inserirDatasDisponiveis.php" method="post">
 						<span>
 							<i>Datas Disponíveis:</i>
-							<input type="text" class="data" id="datepicker" name="data" placeholder="" required="">
+							<input type="text" class="data" id="datespicker" name="data" placeholder="" required="">
 						</span>
 						<div class="w3_submit">
 							<input type="submit" value="Adicionar Datas">
@@ -62,7 +62,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		var diasSemana = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ];
 		var diasFinalSemana = [ "Sunday"];
 
-		$("#datepicker").multiDatesPicker({
+		$("#datespicker").multiDatesPicker({
 			dayNames: [ "Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado" ], 
 			dayNamesMin: [ "D","S","T","Q","Q","S","S" ], 
 			dayNamesShort: ["Dom","Seg","Ter","Qua","Qui","Sex","Sáb","Dom"],

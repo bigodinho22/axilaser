@@ -3,12 +3,20 @@
 ?>
 <?php 
 	require 'php/conexao.php';
-	$query = "select DATE_FORMAT(data, '%d-%m-%Y') as data from datas";
+	$query = "select DATE_FORMAT(data, '%d-%m-%Y') as data, id_data from datas";
 	$diasDisponiveis= [];	
 	$resultado = $conexao->query($query);
 	if($resultado->num_rows>0){
         while($registro = $resultado->fetch_assoc()){
-        	array_push($diasDisponiveis, $registro["data"]);
+        	$query2 = 'select agendada from datahora where id_data='.$registro["id_data"];
+        	$resultado2 = $conexao->query($query2);
+			if($resultado2->num_rows>0){
+		        while($registro2 = $resultado2->fetch_assoc()){
+		        	if($registro2["agendada"]==0){
+		        		array_push($diasDisponiveis, $registro["data"]);
+		        	}
+		        }
+		    }
         }
     }
 ?>
@@ -16,18 +24,18 @@
 <script>
 	$(function() {
 		$( "#datepicker" ).datepicker({
-			dateFormat: "dd-mm-yy", 
+			dateFormat: "dd/mm/yy", 
 			beforeShowDay: function(mydate){
 				var $myBadDates = <?php echo json_encode($diasDisponiveis)?>;
-				var $return=true;
-			    var $returnclass ="available";
+				var $return=false;
+			    var $returnclass ="indisponivel";
 			    $checkdate = $.datepicker.formatDate('dd-mm-yy', mydate);
 			    for(var i = 0; i < $myBadDates.length; i++)
 			        {    
 			           if($myBadDates[i] == $checkdate)
 			              {
-			            $return = false;
-			            $returnclass= "indisponivel";
+			            $return = true;
+			            $returnclass= "disponivel";
 			            }
 			        }
 			    return [$return,$returnclass];

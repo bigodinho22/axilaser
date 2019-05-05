@@ -1,6 +1,6 @@
 <?php include_once "Conexao.php";
 
-	$id_data = $_REQUEST['id_data'];
+	$data = $_REQUEST['data'];
 	
 	$queryHorario = "SELECT agendada,id_horario_data, TIME_FORMAT(horario, '%H:%i') as horarioF FROM datahora WHERE id_data=$id_data ORDER BY horario ASC";
 	$resultadoHorario = $conexao->query($queryHorario);

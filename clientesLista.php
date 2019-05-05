@@ -4,6 +4,7 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
+
 <?php
 	include 'php/validarLoginAdmin.php';
 ?>
@@ -13,7 +14,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <?php 
 		if(isset($_GET["id_agenda"]) & isset($_GET["alteracao"])){
-		require "php/Conexao.php";
+		require "php/conexao.php";
 		$id_agenda=$_GET["id_agenda"];
 		$alteracao=$_GET["alteracao"];
 		$queryUpdate = "update agenda set compareceu=".$alteracao." where id_agenda=".$id_agenda;

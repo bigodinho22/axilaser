@@ -1,6 +1,42 @@
 <?php
 	require 'header.php';
 ?>
+<?php 
+	require 'php/conexao.php';
+	$query = "select DATE_FORMAT(data, '%d-%m-%Y') as data from datas";
+	$diasDisponiveis= [];	
+	$resultado = $conexao->query($query);
+	if($resultado->num_rows>0){
+        while($registro = $resultado->fetch_assoc()){
+        	array_push($diasDisponiveis, $registro["data"]);
+        }
+    }
+?>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script>
+	$(function() {
+		$( "#datepicker" ).datepicker({
+			dateFormat: "dd-mm-yy", 
+			beforeShowDay: checkAvailability
+	});
+	
+	var $myBadDates = <?php echo json_encode($diasDisponiveis)?>;
+
+    function checkAvailability(mydate){
+    var $return=true;
+    var $returnclass ="available";
+    $checkdate = $.datepicker.formatDate('dd-mm-yy', mydate);
+    for(var i = 0; i < $myBadDates.length; i++)
+        {    
+           if($myBadDates[i] == $checkdate)
+              {
+            $return = false;
+            $returnclass= "indisponivel";
+            }
+        }
+    return [$return,$returnclass];
+    }
+</script> 
 <script>
 	!function(f,b,e,v,n,t,s)
 	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -83,14 +119,10 @@
 							</select>
 						</span>
 						<br>
-					<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-					<script type="text/javascript">
-		  				google.load("jquery", "1.4.2");
-					</script>
 		
 					<script type="text/javascript">
 						$(function(){
-							$('#data').change(function(){
+							$('#datepicker').change(function(){
 								if( $(this).val() ) {
 									$('#horario').hide();
 									$('.carregando').show();
@@ -120,12 +152,6 @@
 	</div>
 	<!-- //Time select --> 
 	<!-- Calendar --> 
-	<script src="js/jquery-ui.js"></script>
-	<script>
-	$(function() {
-		$( "#datepicker" ).datepicker({ dateFormat: 'dd-mm-yy' });
-	});
-	</script> 
 	<!-- //Calendar -->  
 	<!-- start-smooth-scrolling -->
 	<script type="text/javascript" src="js/move-top.js"></script>

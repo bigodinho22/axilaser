@@ -88,7 +88,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			<h1><a href="index" id="logo"><img src="images/logo.png" title= "Logo Axilaser" alt="Logo-Axilaser"></a></h1>
 		</div>
-		<div class="video jarallax" data-vide-bg="videos/laser">
+		<div class="video jarallax" data-speed="0.50" data-vide-bg="videos/laser">
 		<!-- //header --> 
 			<!-- banner-text -->
 			<div class="banner-w3ltext page-header__content w3layouts">  

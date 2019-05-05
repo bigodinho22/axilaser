@@ -22,7 +22,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link rel="shortcut icon" type="image/x-icon" href="images/icon.ico" />
 <!-- //Custom Theme files -->
 <!-- js -->
-<script src="js/jquery-2.2.3.min.js"></script> 
+<script src="js/jquery-2.2.3.min.js"></script>
+
 <!-- //js -->
 <!-- web-fonts -->
 <link href='//fonts.googleapis.com/css?family=Text+Me+One' rel='stylesheet' type='text/css'>
@@ -47,6 +48,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	src="https://www.facebook.com/tr?id=238190663781713&ev=PageView
 	&noscript=1"/>
 </noscript>
+<style type="text/css">
+	.indisponivel{
+		background-color: red;
+	}
+</style>
 </head> 
 <?php 
 			require "whatsapp.php";
